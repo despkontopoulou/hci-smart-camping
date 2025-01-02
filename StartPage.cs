@@ -36,7 +36,9 @@ namespace SmartTent
         // main btns click
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            TMLocationSelection locationSelection = new TMLocationSelection();
+            locationSelection.Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

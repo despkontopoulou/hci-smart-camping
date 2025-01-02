@@ -109,7 +109,7 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // Form1
+            // StartPage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -122,7 +122,7 @@
             Controls.Add(exit_btn);
             Controls.Add(menu_btn);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "StartPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)menu_btn).EndInit();

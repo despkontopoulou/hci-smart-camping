@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="emergency_nav_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emergency_nav_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tent_management_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tent_management_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mainbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emergency_nav_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emergency_nav_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="emergency_nav_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emergency_nav_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,19 +136,22 @@
   <data name="explore_nearby_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\explore_nearby_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="explore_nearby_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\explore_nearby_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mainbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="explore_nearby_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explore_nearby_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="location_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\location_selection3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tent_management_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tent_management_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="location_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\location_selection3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -28,39 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            toolStrip1 = new ToolStrip();
             SuspendLayout();
             // 
-            // pictureBox1
+            // toolStrip1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.location_selection;
-            pictureBox1.Location = new Point(41, 122);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(326, 318);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            toolStrip1.ImageScalingSize = new Size(24, 24);
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(1898, 28);
+            toolStrip1.TabIndex = 0;
+            toolStrip1.Text = "toolStrip1";
             // 
             // TMLocationSelection
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveBorder;
             BackgroundImage = Properties.Resources.page_template;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1898, 1024);
-            Controls.Add(pictureBox1);
+            Controls.Add(toolStrip1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Name = "TMLocationSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private ToolStrip toolStrip1;
     }
 }
