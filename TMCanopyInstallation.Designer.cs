@@ -1,6 +1,6 @@
 ﻿namespace SmartTent
 {
-    partial class TMLocationSelection
+    partial class TMCanopyInstallation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             MainPanel = new Panel();
             MainExploreNearby = new Button();
             MainTentManagement = new Button();
@@ -53,29 +52,6 @@
             SubPanelTent.SuspendLayout();
             SuspendLayout();
             // 
-            // nightControlBox1
-            // 
-            nightControlBox1.BackColor = Color.Transparent;
-            nightControlBox1.CloseHoverColor = Color.Gold;
-            nightControlBox1.CloseHoverForeColor = Color.DarkBlue;
-            nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = Color.CornflowerBlue;
-            nightControlBox1.DisableMinimizeColor = Color.CornflowerBlue;
-            nightControlBox1.Dock = DockStyle.Right;
-            nightControlBox1.EnableCloseColor = Color.DarkBlue;
-            nightControlBox1.EnableMaximizeButton = true;
-            nightControlBox1.EnableMaximizeColor = Color.DarkBlue;
-            nightControlBox1.EnableMinimizeButton = true;
-            nightControlBox1.EnableMinimizeColor = Color.DarkBlue;
-            nightControlBox1.Location = new Point(1781, 0);
-            nightControlBox1.MaximizeHoverColor = Color.CornflowerBlue;
-            nightControlBox1.MaximizeHoverForeColor = Color.DarkBlue;
-            nightControlBox1.MinimizeHoverColor = Color.CornflowerBlue;
-            nightControlBox1.MinimizeHoverForeColor = Color.DarkBlue;
-            nightControlBox1.Name = "nightControlBox1";
-            nightControlBox1.Size = new Size(139, 31);
-            nightControlBox1.TabIndex = 0;
-            // 
             // MainPanel
             // 
             MainPanel.BackColor = Color.FromArgb(46, 51, 69);
@@ -89,7 +65,7 @@
             MainPanel.Margin = new Padding(2);
             MainPanel.Name = "MainPanel";
             MainPanel.Size = new Size(325, 596);
-            MainPanel.TabIndex = 1;
+            MainPanel.TabIndex = 3;
             // 
             // MainExploreNearby
             // 
@@ -108,7 +84,6 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
-            MainExploreNearby.Click += button7_Click;
             // 
             // MainTentManagement
             // 
@@ -127,7 +102,6 @@
             MainTentManagement.Text = "Tent Management";
             MainTentManagement.TextAlign = ContentAlignment.MiddleLeft;
             MainTentManagement.UseVisualStyleBackColor = true;
-            MainTentManagement.Click += button1_Click;
             // 
             // SubPanelEmergency
             // 
@@ -176,7 +150,6 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
-            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -195,7 +168,6 @@
             MainEmergencyNav.Text = "Emergency Navigation";
             MainEmergencyNav.TextAlign = ContentAlignment.MiddleLeft;
             MainEmergencyNav.UseVisualStyleBackColor = true;
-            MainEmergencyNav.Click += button8_Click;
             // 
             // SubPanelExplore
             // 
@@ -228,7 +200,6 @@
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
             SubExplore4.UseVisualStyleBackColor = true;
-            SubExplore4.Click += SubExplore4_Click;
             // 
             // SubExplore3
             // 
@@ -247,7 +218,6 @@
             SubExplore3.Text = "Activities";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
-            SubExplore3.Click += SubExplore3_Click;
             // 
             // SubExplore2
             // 
@@ -266,7 +236,6 @@
             SubExplore2.Text = "Scenic Routes";
             SubExplore2.TextAlign = ContentAlignment.TopLeft;
             SubExplore2.UseVisualStyleBackColor = true;
-            SubExplore2.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -317,7 +286,6 @@
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
             SubTent5.UseVisualStyleBackColor = true;
-            SubTent5.Click += SubTent5_Click;
             // 
             // SubTent4
             // 
@@ -336,7 +304,6 @@
             SubTent4.Text = "Lighting Settings";
             SubTent4.TextAlign = ContentAlignment.TopLeft;
             SubTent4.UseVisualStyleBackColor = true;
-            SubTent4.Click += SubTent4_Click;
             // 
             // SubTent3
             // 
@@ -345,7 +312,7 @@
             SubTent3.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
             SubTent3.FlatStyle = FlatStyle.Flat;
             SubTent3.Font = new Font("Segoe UI", 14F);
-            SubTent3.ForeColor = Color.FromArgb(254, 254, 247);
+            SubTent3.ForeColor = Color.FromArgb(219, 166, 30);
             SubTent3.Location = new Point(0, 80);
             SubTent3.Margin = new Padding(2);
             SubTent3.Name = "SubTent3";
@@ -354,8 +321,6 @@
             SubTent3.TabIndex = 3;
             SubTent3.Text = "Protective Canopy Installation";
             SubTent3.TextAlign = ContentAlignment.TopLeft;
-            SubTent3.UseVisualStyleBackColor = true;
-            SubTent3.Click += SubTent3_Click;
             // 
             // SubTent2
             // 
@@ -374,7 +339,6 @@
             SubTent2.Text = "Tent Peg Installation";
             SubTent2.TextAlign = ContentAlignment.TopLeft;
             SubTent2.UseVisualStyleBackColor = true;
-            SubTent2.Click += button3_Click;
             // 
             // SubTent1
             // 
@@ -383,7 +347,7 @@
             SubTent1.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
             SubTent1.FlatStyle = FlatStyle.Flat;
             SubTent1.Font = new Font("Segoe UI", 14F);
-            SubTent1.ForeColor = Color.FromArgb(219, 166, 30);
+            SubTent1.ForeColor = Color.FromArgb(254, 254, 247);
             SubTent1.Location = new Point(0, 0);
             SubTent1.Margin = new Padding(2);
             SubTent1.Name = "SubTent1";
@@ -393,25 +357,18 @@
             SubTent1.Text = "Location Selection";
             SubTent1.TextAlign = ContentAlignment.TopLeft;
             SubTent1.UseVisualStyleBackColor = true;
-            SubTent1.Click += SubTent1_Click;
             // 
-            // TMLocationSelection
+            // TMCanopyInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 69);
-            BackgroundImage = Properties.Resources.page_template;
-            BackgroundImageLayout = ImageLayout.Stretch;
+            BackgroundImage = Properties.Resources.Group_2092;
             ClientSize = new Size(1920, 1080);
             Controls.Add(MainPanel);
-            Controls.Add(nightControlBox1);
-            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2);
-            Name = "TMLocationSelection";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
-            Load += TMLocationSelection_Load;
+            Name = "TMCanopyInstallation";
+            Text = "TMCanopyInstallation";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
@@ -421,24 +378,23 @@
 
         #endregion
 
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Panel MainPanel;
-        private Button MainTentManagement;
-        private Button SubTent2;
-        private Button SubTent1;
-        private Panel SubPanelTent;
-        private Button SubTent3;
-        private Button SubTent4;
-        private Button SubTent5;
-        private Button MainEmergencyNav;
         private Button MainExploreNearby;
-        private Panel SubPanelExplore;
-        private Button SubExplore3;
-        private Button SubExplore2;
-        private Button SubExplore1;
+        private Button MainTentManagement;
         private Panel SubPanelEmergency;
         private Button SubEmergNav2;
         private Button SubEmergNav1;
+        private Button MainEmergencyNav;
+        private Panel SubPanelExplore;
         private Button SubExplore4;
+        private Button SubExplore3;
+        private Button SubExplore2;
+        private Button SubExplore1;
+        private Panel SubPanelTent;
+        private Button SubTent5;
+        private Button SubTent4;
+        private Button SubTent3;
+        private Button SubTent2;
+        private Button SubTent1;
     }
 }

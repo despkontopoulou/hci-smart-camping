@@ -113,6 +113,36 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_209 {
+            get {
+                object obj = ResourceManager.GetObject("Group 209", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_2091 {
+            get {
+                object obj = ResourceManager.GetObject("Group 2091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_2092 {
+            get {
+                object obj = ResourceManager.GetObject("Group 2092", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap location_selection {
             get {
                 object obj = ResourceManager.GetObject("location_selection", resourceCulture);
@@ -176,6 +206,16 @@ namespace SmartTent.Properties {
         internal static System.Drawing.Bitmap tent_management_btn_2 {
             get {
                 object obj = ResourceManager.GetObject("tent_management_btn_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TMPegInstallation {
+            get {
+                object obj = ResourceManager.GetObject("TMPegInstallation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
