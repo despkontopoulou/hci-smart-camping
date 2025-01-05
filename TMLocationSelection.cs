@@ -19,8 +19,8 @@ namespace SmartTent
             SubPanelTent.Visible = true;
             SubPanelExplore.Visible = false;
             SubPanelEmergency.Visible = false;
-            MainExploreNearby.Location = new Point(0, 214);
-            MainEmergencyNav.Location = new Point(0, 245);
+            MainExploreNearby.Location = new Point(0, 240);
+            MainEmergencyNav.Location = new Point(0, 280);
         }
 
 
@@ -66,31 +66,76 @@ namespace SmartTent
         {
             if (SubPanelTent.Visible)
             {
-                MainExploreNearby.Location = new Point(0, 214);
-                MainEmergencyNav.Location = new Point(0, 245);
+                MainExploreNearby.Location = new Point(0, 240);
+                MainEmergencyNav.Location = new Point(0, 280);
 
             }
             if (!SubPanelTent.Visible)
             {
-                MainExploreNearby.Location = new Point(0, 32);
-                MainEmergencyNav.Location = new Point(0, 65);
+                MainExploreNearby.Location = new Point(0, 38);
+                MainEmergencyNav.Location = new Point(0, 76);
 
             }
 
             if (SubPanelExplore.Visible)
             {
-                MainExploreNearby.Location = new Point(0, 32);
-                SubPanelExplore.Location = new Point(34, 245);
-                MainEmergencyNav.Location = new Point(0, 203);
+                MainExploreNearby.Location = new Point(0, 38);
+                SubPanelExplore.Location = new Point(0, 76);
+                MainEmergencyNav.Location = new Point(0, 236);
             }
             if (SubPanelEmergency.Visible)
             {
-                SubPanelEmergency.Location = new Point(0, 98);
+                SubPanelEmergency.Location = new Point(0, 114);
             }
 
         }
 
         private void TMLocationSelection_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubEmergNav1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubExplore3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubExplore2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubExplore4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubTent3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubTent4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubTent5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubEmergNav2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TMLocationSelection_Load_1(object sender, EventArgs e)
         {
 
         }
