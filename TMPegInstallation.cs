@@ -84,7 +84,7 @@ namespace SmartTent
             {
                 MainExploreNearby.Location = new Point(0, 38);
                 SubPanelExplore.Location = new Point(0, 76);
-                MainEmergencyNav.Location = new Point(0, 236);
+                MainEmergencyNav.Location = new Point(0, 196);
             }
             if (SubPanelEmergency.Visible)
             {
@@ -118,7 +118,7 @@ namespace SmartTent
         {
             TMEnergy energy = new TMEnergy();
             energy.Show();
-            energy.Hide();
+            this.Hide();
         }
 
         private void MainExploreNearby_Click(object sender, EventArgs e)

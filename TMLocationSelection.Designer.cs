@@ -33,13 +33,11 @@
             MainExploreNearby = new Button();
             MainTentManagement = new Button();
             SubPanelEmergency = new Panel();
-            SubEmergNav2 = new Button();
             SubEmergNav1 = new Button();
             MainEmergencyNav = new Button();
             SubPanelExplore = new Panel();
             SubExplore4 = new Button();
             SubExplore3 = new Button();
-            SubExplore2 = new Button();
             SubExplore1 = new Button();
             SubPanelTent = new Panel();
             SubTent5 = new Button();
@@ -132,32 +130,13 @@
             // SubPanelEmergency
             // 
             SubPanelEmergency.BackColor = Color.FromArgb(65, 71, 95);
-            SubPanelEmergency.Controls.Add(SubEmergNav2);
             SubPanelEmergency.Controls.Add(SubEmergNav1);
-            SubPanelEmergency.Location = new Point(0, 480);
+            SubPanelEmergency.Location = new Point(0, 440);
             SubPanelEmergency.Margin = new Padding(2);
             SubPanelEmergency.Name = "SubPanelEmergency";
-            SubPanelEmergency.Size = new Size(316, 80);
+            SubPanelEmergency.Size = new Size(316, 40);
             SubPanelEmergency.TabIndex = 9;
             SubPanelEmergency.Visible = false;
-            // 
-            // SubEmergNav2
-            // 
-            SubEmergNav2.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            SubEmergNav2.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            SubEmergNav2.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
-            SubEmergNav2.FlatStyle = FlatStyle.Flat;
-            SubEmergNav2.Font = new Font("Segoe UI", 14F);
-            SubEmergNav2.ForeColor = Color.FromArgb(254, 254, 247);
-            SubEmergNav2.Location = new Point(0, 40);
-            SubEmergNav2.Margin = new Padding(2);
-            SubEmergNav2.Name = "SubEmergNav2";
-            SubEmergNav2.Padding = new Padding(14, 0, 0, 0);
-            SubEmergNav2.Size = new Size(316, 40);
-            SubEmergNav2.TabIndex = 7;
-            SubEmergNav2.Text = "Emergency Routes";
-            SubEmergNav2.TextAlign = ContentAlignment.TopLeft;
-            SubEmergNav2.UseVisualStyleBackColor = true;
             // 
             // SubEmergNav1
             // 
@@ -186,7 +165,7 @@
             MainEmergencyNav.FlatStyle = FlatStyle.Flat;
             MainEmergencyNav.Font = new Font("Segoe UI", 14F);
             MainEmergencyNav.ForeColor = Color.FromArgb(254, 254, 247);
-            MainEmergencyNav.Location = new Point(0, 440);
+            MainEmergencyNav.Location = new Point(0, 400);
             MainEmergencyNav.Margin = new Padding(2);
             MainEmergencyNav.Name = "MainEmergencyNav";
             MainEmergencyNav.Padding = new Padding(14, 0, 0, 0);
@@ -202,12 +181,11 @@
             SubPanelExplore.BackColor = Color.FromArgb(65, 71, 95);
             SubPanelExplore.Controls.Add(SubExplore4);
             SubPanelExplore.Controls.Add(SubExplore3);
-            SubPanelExplore.Controls.Add(SubExplore2);
             SubPanelExplore.Controls.Add(SubExplore1);
             SubPanelExplore.Location = new Point(0, 280);
             SubPanelExplore.Margin = new Padding(2);
             SubPanelExplore.Name = "SubPanelExplore";
-            SubPanelExplore.Size = new Size(316, 160);
+            SubPanelExplore.Size = new Size(316, 120);
             SubPanelExplore.TabIndex = 7;
             SubPanelExplore.Visible = false;
             // 
@@ -219,7 +197,7 @@
             SubExplore4.FlatStyle = FlatStyle.Flat;
             SubExplore4.Font = new Font("Segoe UI", 14F);
             SubExplore4.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore4.Location = new Point(0, 120);
+            SubExplore4.Location = new Point(0, 80);
             SubExplore4.Margin = new Padding(2);
             SubExplore4.Name = "SubExplore4";
             SubExplore4.Padding = new Padding(14, 0, 0, 0);
@@ -238,7 +216,7 @@
             SubExplore3.FlatStyle = FlatStyle.Flat;
             SubExplore3.Font = new Font("Segoe UI", 14F);
             SubExplore3.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore3.Location = new Point(0, 80);
+            SubExplore3.Location = new Point(0, 40);
             SubExplore3.Margin = new Padding(2);
             SubExplore3.Name = "SubExplore3";
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
@@ -248,25 +226,6 @@
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
             SubExplore3.Click += SubExplore3_Click;
-            // 
-            // SubExplore2
-            // 
-            SubExplore2.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            SubExplore2.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            SubExplore2.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
-            SubExplore2.FlatStyle = FlatStyle.Flat;
-            SubExplore2.Font = new Font("Segoe UI", 14F);
-            SubExplore2.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore2.Location = new Point(0, 40);
-            SubExplore2.Margin = new Padding(2);
-            SubExplore2.Name = "SubExplore2";
-            SubExplore2.Padding = new Padding(14, 0, 0, 0);
-            SubExplore2.Size = new Size(316, 40);
-            SubExplore2.TabIndex = 7;
-            SubExplore2.Text = "Scenic Routes";
-            SubExplore2.TextAlign = ContentAlignment.TopLeft;
-            SubExplore2.UseVisualStyleBackColor = true;
-            SubExplore2.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -434,10 +393,8 @@
         private Button MainExploreNearby;
         private Panel SubPanelExplore;
         private Button SubExplore3;
-        private Button SubExplore2;
         private Button SubExplore1;
         private Panel SubPanelEmergency;
-        private Button SubEmergNav2;
         private Button SubEmergNav1;
         private Button SubExplore4;
     }

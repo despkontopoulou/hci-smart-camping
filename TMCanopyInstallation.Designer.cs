@@ -38,7 +38,6 @@
             SubPanelExplore = new Panel();
             SubExplore4 = new Button();
             SubExplore3 = new Button();
-            SubExplore2 = new Button();
             SubExplore1 = new Button();
             SubPanelTent = new Panel();
             SubTent5 = new Button();
@@ -46,6 +45,7 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -110,10 +110,10 @@
             SubPanelEmergency.BackColor = Color.FromArgb(65, 71, 95);
             SubPanelEmergency.Controls.Add(SubEmergNav2);
             SubPanelEmergency.Controls.Add(SubEmergNav1);
-            SubPanelEmergency.Location = new Point(0, 480);
+            SubPanelEmergency.Location = new Point(0, 440);
             SubPanelEmergency.Margin = new Padding(2);
             SubPanelEmergency.Name = "SubPanelEmergency";
-            SubPanelEmergency.Size = new Size(316, 80);
+            SubPanelEmergency.Size = new Size(316, 40);
             SubPanelEmergency.TabIndex = 9;
             SubPanelEmergency.Visible = false;
             // 
@@ -125,11 +125,11 @@
             SubEmergNav2.FlatStyle = FlatStyle.Flat;
             SubEmergNav2.Font = new Font("Segoe UI", 14F);
             SubEmergNav2.ForeColor = Color.FromArgb(254, 254, 247);
-            SubEmergNav2.Location = new Point(0, 40);
+            SubEmergNav2.Location = new Point(0, 0);
             SubEmergNav2.Margin = new Padding(2);
             SubEmergNav2.Name = "SubEmergNav2";
             SubEmergNav2.Padding = new Padding(14, 0, 0, 0);
-            SubEmergNav2.Size = new Size(316, 40);
+            SubEmergNav2.Size = new Size(289, 40);
             SubEmergNav2.TabIndex = 7;
             SubEmergNav2.Text = "Emergency Routes";
             SubEmergNav2.TextAlign = ContentAlignment.TopLeft;
@@ -143,7 +143,7 @@
             SubEmergNav1.FlatStyle = FlatStyle.Flat;
             SubEmergNav1.Font = new Font("Segoe UI", 14F);
             SubEmergNav1.ForeColor = Color.FromArgb(254, 254, 247);
-            SubEmergNav1.Location = new Point(0, 0);
+            SubEmergNav1.Location = new Point(0, -42);
             SubEmergNav1.Margin = new Padding(2);
             SubEmergNav1.Name = "SubEmergNav1";
             SubEmergNav1.Padding = new Padding(14, 0, 0, 0);
@@ -161,7 +161,7 @@
             MainEmergencyNav.FlatStyle = FlatStyle.Flat;
             MainEmergencyNav.Font = new Font("Segoe UI", 14F);
             MainEmergencyNav.ForeColor = Color.FromArgb(254, 254, 247);
-            MainEmergencyNav.Location = new Point(0, 440);
+            MainEmergencyNav.Location = new Point(0, 400);
             MainEmergencyNav.Margin = new Padding(2);
             MainEmergencyNav.Name = "MainEmergencyNav";
             MainEmergencyNav.Padding = new Padding(14, 0, 0, 0);
@@ -177,12 +177,11 @@
             SubPanelExplore.BackColor = Color.FromArgb(65, 71, 95);
             SubPanelExplore.Controls.Add(SubExplore4);
             SubPanelExplore.Controls.Add(SubExplore3);
-            SubPanelExplore.Controls.Add(SubExplore2);
             SubPanelExplore.Controls.Add(SubExplore1);
             SubPanelExplore.Location = new Point(0, 280);
             SubPanelExplore.Margin = new Padding(2);
             SubPanelExplore.Name = "SubPanelExplore";
-            SubPanelExplore.Size = new Size(316, 160);
+            SubPanelExplore.Size = new Size(316, 120);
             SubPanelExplore.TabIndex = 7;
             SubPanelExplore.Visible = false;
             // 
@@ -194,11 +193,11 @@
             SubExplore4.FlatStyle = FlatStyle.Flat;
             SubExplore4.Font = new Font("Segoe UI", 14F);
             SubExplore4.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore4.Location = new Point(0, 120);
+            SubExplore4.Location = new Point(0, 80);
             SubExplore4.Margin = new Padding(2);
             SubExplore4.Name = "SubExplore4";
             SubExplore4.Padding = new Padding(14, 0, 0, 0);
-            SubExplore4.Size = new Size(316, 40);
+            SubExplore4.Size = new Size(289, 40);
             SubExplore4.TabIndex = 9;
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
@@ -212,7 +211,7 @@
             SubExplore3.FlatStyle = FlatStyle.Flat;
             SubExplore3.Font = new Font("Segoe UI", 14F);
             SubExplore3.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore3.Location = new Point(0, 80);
+            SubExplore3.Location = new Point(0, 40);
             SubExplore3.Margin = new Padding(2);
             SubExplore3.Name = "SubExplore3";
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
@@ -221,24 +220,6 @@
             SubExplore3.Text = "Activities";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
-            // 
-            // SubExplore2
-            // 
-            SubExplore2.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            SubExplore2.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            SubExplore2.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
-            SubExplore2.FlatStyle = FlatStyle.Flat;
-            SubExplore2.Font = new Font("Segoe UI", 14F);
-            SubExplore2.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore2.Location = new Point(0, 40);
-            SubExplore2.Margin = new Padding(2);
-            SubExplore2.Name = "SubExplore2";
-            SubExplore2.Padding = new Padding(14, 0, 0, 0);
-            SubExplore2.Size = new Size(316, 40);
-            SubExplore2.TabIndex = 7;
-            SubExplore2.Text = "Scenic Routes";
-            SubExplore2.TextAlign = ContentAlignment.TopLeft;
-            SubExplore2.UseVisualStyleBackColor = true;
             // 
             // SubExplore1
             // 
@@ -284,7 +265,7 @@
             SubTent5.Margin = new Padding(2);
             SubTent5.Name = "SubTent5";
             SubTent5.Padding = new Padding(14, 0, 0, 0);
-            SubTent5.Size = new Size(316, 40);
+            SubTent5.Size = new Size(298, 40);
             SubTent5.TabIndex = 5;
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
@@ -366,6 +347,29 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // nightControlBox1
+            // 
+            nightControlBox1.BackColor = Color.Transparent;
+            nightControlBox1.CloseHoverColor = Color.Gold;
+            nightControlBox1.CloseHoverForeColor = Color.DarkBlue;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = Color.CornflowerBlue;
+            nightControlBox1.DisableMinimizeColor = Color.CornflowerBlue;
+            nightControlBox1.Dock = DockStyle.Right;
+            nightControlBox1.EnableCloseColor = Color.DarkBlue;
+            nightControlBox1.EnableMaximizeButton = true;
+            nightControlBox1.EnableMaximizeColor = Color.DarkBlue;
+            nightControlBox1.EnableMinimizeButton = true;
+            nightControlBox1.EnableMinimizeColor = Color.DarkBlue;
+            nightControlBox1.Location = new Point(1781, 0);
+            nightControlBox1.MaximizeHoverColor = Color.CornflowerBlue;
+            nightControlBox1.MaximizeHoverForeColor = Color.DarkBlue;
+            nightControlBox1.MinimizeHoverColor = Color.CornflowerBlue;
+            nightControlBox1.MinimizeHoverForeColor = Color.DarkBlue;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new Size(139, 31);
+            nightControlBox1.TabIndex = 7;
+            // 
             // TMCanopyInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -373,9 +377,11 @@
             BackColor = Color.FromArgb(46, 51, 69);
             BackgroundImage = Properties.Resources.Group_2092;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(nightControlBox1);
             Controls.Add(MainPanel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TMCanopyInstallation";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TMCanopyInstallation";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
@@ -396,7 +402,6 @@
         private Panel SubPanelExplore;
         private Button SubExplore4;
         private Button SubExplore3;
-        private Button SubExplore2;
         private Button SubExplore1;
         private Panel SubPanelTent;
         private Button SubTent5;
@@ -404,5 +409,6 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }
