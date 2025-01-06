@@ -120,17 +120,23 @@ namespace SmartTent
 
         private void SubTent3_Click(object sender, EventArgs e)
         {
-
+            TMCanopyInstallation canopyInstallation = new TMCanopyInstallation();
+            canopyInstallation.Show();
+            this.Hide();
         }
 
         private void SubTent4_Click(object sender, EventArgs e)
         {
-
+            TMLightingSettings lightingSettings = new TMLightingSettings();
+            lightingSettings.Show();
+            this.Hide();
         }
 
         private void SubTent5_Click(object sender, EventArgs e)
         {
-
+            TMEnergy energy = new TMEnergy();
+            energy.Show();
+            energy.Hide();
         }
 
         private void SubEmergNav2_Click(object sender, EventArgs e)

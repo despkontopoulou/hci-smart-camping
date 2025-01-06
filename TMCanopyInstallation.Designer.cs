@@ -84,6 +84,7 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
+            MainExploreNearby.Click += MainExploreNearby_Click;
             // 
             // MainTentManagement
             // 
@@ -102,6 +103,7 @@
             MainTentManagement.Text = "Tent Management";
             MainTentManagement.TextAlign = ContentAlignment.MiddleLeft;
             MainTentManagement.UseVisualStyleBackColor = true;
+            MainTentManagement.Click += MainTentManagement_Click;
             // 
             // SubPanelEmergency
             // 
@@ -168,6 +170,7 @@
             MainEmergencyNav.Text = "Emergency Navigation";
             MainEmergencyNav.TextAlign = ContentAlignment.MiddleLeft;
             MainEmergencyNav.UseVisualStyleBackColor = true;
+            MainEmergencyNav.Click += MainEmergencyNav_Click;
             // 
             // SubPanelExplore
             // 
@@ -286,6 +289,7 @@
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
             SubTent5.UseVisualStyleBackColor = true;
+            SubTent5.Click += SubTent5_Click;
             // 
             // SubTent4
             // 
@@ -304,6 +308,7 @@
             SubTent4.Text = "Lighting Settings";
             SubTent4.TextAlign = ContentAlignment.TopLeft;
             SubTent4.UseVisualStyleBackColor = true;
+            SubTent4.Click += SubTent4_Click;
             // 
             // SubTent3
             // 
@@ -321,6 +326,7 @@
             SubTent3.TabIndex = 3;
             SubTent3.Text = "Protective Canopy Installation";
             SubTent3.TextAlign = ContentAlignment.TopLeft;
+            SubTent3.Click += SubTent3_Click;
             // 
             // SubTent2
             // 
@@ -339,6 +345,7 @@
             SubTent2.Text = "Tent Peg Installation";
             SubTent2.TextAlign = ContentAlignment.TopLeft;
             SubTent2.UseVisualStyleBackColor = true;
+            SubTent2.Click += SubTent2_Click;
             // 
             // SubTent1
             // 
@@ -357,6 +364,7 @@
             SubTent1.Text = "Location Selection";
             SubTent1.TextAlign = ContentAlignment.TopLeft;
             SubTent1.UseVisualStyleBackColor = true;
+            SubTent1.Click += SubTent1_Click;
             // 
             // TMCanopyInstallation
             // 
