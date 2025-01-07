@@ -86,7 +86,7 @@
             MainPanel.Location = new Point(34, 142);
             MainPanel.Margin = new Padding(2);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(325, 596);
+            MainPanel.Size = new Size(312, 596);
             MainPanel.TabIndex = 9;
             // 
             // MainExploreNearby

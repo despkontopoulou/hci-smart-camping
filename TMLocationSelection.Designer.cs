@@ -420,6 +420,7 @@
             campground.Name = "campground";
             campground.Size = new Size(136, 29);
             campground.TabIndex = 6;
+            campground.Text = "-";
             // 
             // coordinates
             // 
@@ -431,6 +432,7 @@
             coordinates.Name = "coordinates";
             coordinates.Size = new Size(264, 29);
             coordinates.TabIndex = 7;
+            coordinates.Text = "-";
             // 
             // weather
             // 
@@ -442,6 +444,7 @@
             weather.Name = "weather";
             weather.Size = new Size(136, 29);
             weather.TabIndex = 8;
+            weather.Text = "-";
             // 
             // humidity
             // 
@@ -453,6 +456,7 @@
             humidity.Name = "humidity";
             humidity.Size = new Size(136, 29);
             humidity.TabIndex = 9;
+            humidity.Text = "-";
             // 
             // stability
             // 
@@ -464,6 +468,7 @@
             stability.Name = "stability";
             stability.Size = new Size(136, 29);
             stability.TabIndex = 10;
+            stability.Text = "-";
             // 
             // sunExposure
             // 
@@ -475,6 +480,7 @@
             sunExposure.Name = "sunExposure";
             sunExposure.Size = new Size(136, 29);
             sunExposure.TabIndex = 11;
+            sunExposure.Text = "-";
             // 
             // current
             // 
@@ -482,19 +488,21 @@
             current.BorderStyle = BorderStyle.None;
             current.Font = new Font("Segoe UI", 20F);
             current.ForeColor = Color.FromArgb(219, 165, 30);
-            current.Location = new Point(1540, 887);
+            current.Location = new Point(1509, 885);
             current.Name = "current";
-            current.Size = new Size(136, 36);
+            current.Size = new Size(204, 36);
             current.TabIndex = 12;
+            current.Text = "No Location Pick";
+            current.TextAlign = HorizontalAlignment.Center;
             // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(219, 166, 30);
             button1.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(147, 111, 20);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(172, 129, 22);
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 20F);
+            button1.Font = new Font("Segoe UI", 15F);
             button1.ForeColor = Color.White;
             button1.Location = new Point(1494, 956);
             button1.Margin = new Padding(2);
@@ -504,6 +512,7 @@
             button1.TabIndex = 6;
             button1.Text = "Select Location";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // TMLocationSelection
             // 

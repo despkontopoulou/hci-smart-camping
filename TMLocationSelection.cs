@@ -41,7 +41,8 @@ namespace SmartTent
             changeOnHover(pictureBox4, campsite4Normal, campsite4Hover, 4);
         }
 
-
+        private int clickedCamp = 0;
+        private int lastClickedCamp = 0;
         private void button3_Click(object sender, EventArgs e)
         {
             TMPegInstallation pegInstallation = new TMPegInstallation();
@@ -111,69 +112,69 @@ namespace SmartTent
 
         }
 
-       /* private void changeOnHover(PictureBox pictureBox, Image normal, Image hover, int camp)
-        {
-            pictureBox.MouseHover += (sender, e) =>
-            {
-                pictureBox.Image = hover;
+        /* private void changeOnHover(PictureBox pictureBox, Image normal, Image hover, int camp)
+         {
+             pictureBox.MouseHover += (sender, e) =>
+             {
+                 pictureBox.Image = hover;
 
-                switch (camp)
-                {
-                    case 1:
-                        campground.Text = "Campsite 1";
-                        current.Text = "Campsite 1";
-                        coordinates.Text = "25°27'32.0\"N 32°57'21.2\"W";
-                        weather.Text = "Rainy";
-                        humidity.Text = "90%";
-                        stability.Text = "100%";
-                        sunExposure.Text = "Low";
-                        break;
+                 switch (camp)
+                 {
+                     case 1:
+                         campground.Text = "Campsite 1";
+                         current.Text = "Campsite 1";
+                         coordinates.Text = "25°27'32.0\"N 32°57'21.2\"W";
+                         weather.Text = "Rainy";
+                         humidity.Text = "90%";
+                         stability.Text = "100%";
+                         sunExposure.Text = "Low";
+                         break;
 
-                    case 2:
-                        campground.Text = "Campsite 2";
-                        current.Text = "Campsite 2";
-                        coordinates.Text = "25°27'32.0\"N 32°67'21.2\"W";
-                        weather.Text = "Rainy";
-                        humidity.Text = "90%";
-                        stability.Text = "100%";
-                        sunExposure.Text = "Medium";
-                        break;
+                     case 2:
+                         campground.Text = "Campsite 2";
+                         current.Text = "Campsite 2";
+                         coordinates.Text = "25°27'32.0\"N 32°67'21.2\"W";
+                         weather.Text = "Rainy";
+                         humidity.Text = "90%";
+                         stability.Text = "100%";
+                         sunExposure.Text = "Medium";
+                         break;
 
-                    case 3:
-                        campground.Text = "Campsite 3";
-                        current.Text = "Campsite 3";
-                        coordinates.Text = "25°28'32.0\"N 32°75'21.2\"W";
-                        weather.Text = "Rainy";
-                        humidity.Text = "95%";
-                        stability.Text = "100%";
-                        sunExposure.Text = "Medium";
-                        break;
+                     case 3:
+                         campground.Text = "Campsite 3";
+                         current.Text = "Campsite 3";
+                         coordinates.Text = "25°28'32.0\"N 32°75'21.2\"W";
+                         weather.Text = "Rainy";
+                         humidity.Text = "95%";
+                         stability.Text = "100%";
+                         sunExposure.Text = "Medium";
+                         break;
 
-                    case 4:
-                        campground.Text = "Campsite 4";
-                        current.Text = "Campsite 4";
-                        coordinates.Text = "25°21'32.0\"N 32°70'21.2\"W";
-                        weather.Text = "Rainy";
-                        humidity.Text = "85%";
-                        stability.Text = "100%";
-                        sunExposure.Text = "Low";
-                        break;
-                }
-            };
-            pictureBox.MouseLeave += (sender, e) =>
-            {
-                pictureBox.Image = normal;
-                campground.Text = "";
-                current.Text = "";
-                coordinates.Text = "";
-                weather.Text = "";
-                humidity.Text = "";
-                stability.Text = "";
-                sunExposure.Text = "";
-            };
+                     case 4:
+                         campground.Text = "Campsite 4";
+                         current.Text = "Campsite 4";
+                         coordinates.Text = "25°21'32.0\"N 32°70'21.2\"W";
+                         weather.Text = "Rainy";
+                         humidity.Text = "85%";
+                         stability.Text = "100%";
+                         sunExposure.Text = "Low";
+                         break;
+                 }
+             };
+             pictureBox.MouseLeave += (sender, e) =>
+             {
+                 pictureBox.Image = normal;
+                 campground.Text = "";
+                 current.Text = "";
+                 coordinates.Text = "";
+                 weather.Text = "";
+                 humidity.Text = "";
+                 stability.Text = "";
+                 sunExposure.Text = "";
+             };
 
 
-        }*/
+         }*/
 
         private void TMLocationSelection_Load(object sender, EventArgs e)
         {
@@ -301,7 +302,14 @@ namespace SmartTent
 
                 selectedPictureBox = pictureBox; // Set new selection
                 pictureBox.Image = hover; // Keep hover image on selection
-
+                clickedCamp = camp;
+                if (clickedCamp != lastClickedCamp) {
+                    button1.Text = "Select Location";
+                    button1.BackColor = Color.FromArgb(219, 166, 30);
+                    button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(172, 129, 22);
+                    button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(147, 111, 20);
+                    current.ForeColor = Color.FromArgb(219, 166, 30);
+                }
                 UpdateCampsiteInfo(camp); // Update displayed information
             };
         }
@@ -363,7 +371,16 @@ namespace SmartTent
             }
         }
 
-
-
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (clickedCamp != 0) {
+                button1.Text = "Selected Location";
+                button1.BackColor = Color.FromArgb(19, 168, 36);
+                button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(15,125,28);
+                button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(9, 87, 28);
+                current.ForeColor = Color.FromArgb(19, 168, 36);
+                lastClickedCamp = clickedCamp;
+            }
+        }
     }
 }
