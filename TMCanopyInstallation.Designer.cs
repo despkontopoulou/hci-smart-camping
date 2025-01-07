@@ -217,7 +217,7 @@
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
             SubExplore3.Size = new Size(316, 40);
             SubExplore3.TabIndex = 8;
-            SubExplore3.Text = "Activities";
+            SubExplore3.Text = "Services";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
             // 

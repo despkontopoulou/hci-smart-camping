@@ -45,10 +45,26 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            campground = new TextBox();
+            coordinates = new TextBox();
+            weather = new TextBox();
+            humidity = new TextBox();
+            stability = new TextBox();
+            sunExposure = new TextBox();
+            current = new TextBox();
+            button1 = new Button();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -222,7 +238,7 @@
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
             SubExplore3.Size = new Size(316, 40);
             SubExplore3.TabIndex = 8;
-            SubExplore3.Text = "Activities";
+            SubExplore3.Text = "Services";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
             SubExplore3.Click += SubExplore3_Click;
@@ -354,6 +370,141 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.FromArgb(195, 241, 213);
+            pictureBox2.Image = Properties.Resources.campsite2_n;
+            pictureBox2.Location = new Point(968, 413);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(151, 89);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.FromArgb(195, 241, 213);
+            pictureBox3.Image = Properties.Resources.campsite3_n;
+            pictureBox3.Location = new Point(1032, 582);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(148, 105);
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.FromArgb(195, 241, 213);
+            pictureBox4.Image = Properties.Resources.campsite4_n;
+            pictureBox4.Location = new Point(1207, 661);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(154, 105);
+            pictureBox4.TabIndex = 4;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.FromArgb(195, 241, 213);
+            pictureBox1.Image = Properties.Resources.campsite1_n;
+            pictureBox1.Location = new Point(1322, 422);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(156, 105);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
+            // campground
+            // 
+            campground.BackColor = Color.FromArgb(65, 71, 95);
+            campground.BorderStyle = BorderStyle.None;
+            campground.Font = new Font("Segoe UI", 16F);
+            campground.ForeColor = Color.FromArgb(178, 193, 208);
+            campground.Location = new Point(708, 871);
+            campground.Name = "campground";
+            campground.Size = new Size(136, 29);
+            campground.TabIndex = 6;
+            // 
+            // coordinates
+            // 
+            coordinates.BackColor = Color.FromArgb(65, 71, 95);
+            coordinates.BorderStyle = BorderStyle.None;
+            coordinates.Font = new Font("Segoe UI", 16F);
+            coordinates.ForeColor = Color.FromArgb(178, 193, 208);
+            coordinates.Location = new Point(699, 939);
+            coordinates.Name = "coordinates";
+            coordinates.Size = new Size(264, 29);
+            coordinates.TabIndex = 7;
+            // 
+            // weather
+            // 
+            weather.BackColor = Color.FromArgb(65, 71, 95);
+            weather.BorderStyle = BorderStyle.None;
+            weather.Font = new Font("Segoe UI", 16F);
+            weather.ForeColor = Color.FromArgb(178, 193, 208);
+            weather.Location = new Point(658, 1003);
+            weather.Name = "weather";
+            weather.Size = new Size(136, 29);
+            weather.TabIndex = 8;
+            // 
+            // humidity
+            // 
+            humidity.BackColor = Color.FromArgb(65, 71, 95);
+            humidity.BorderStyle = BorderStyle.None;
+            humidity.Font = new Font("Segoe UI", 16F);
+            humidity.ForeColor = Color.FromArgb(178, 193, 208);
+            humidity.Location = new Point(1138, 870);
+            humidity.Name = "humidity";
+            humidity.Size = new Size(136, 29);
+            humidity.TabIndex = 9;
+            // 
+            // stability
+            // 
+            stability.BackColor = Color.FromArgb(65, 71, 95);
+            stability.BorderStyle = BorderStyle.None;
+            stability.Font = new Font("Segoe UI", 16F);
+            stability.ForeColor = Color.FromArgb(178, 193, 208);
+            stability.Location = new Point(1204, 938);
+            stability.Name = "stability";
+            stability.Size = new Size(136, 29);
+            stability.TabIndex = 10;
+            // 
+            // sunExposure
+            // 
+            sunExposure.BackColor = Color.FromArgb(65, 71, 95);
+            sunExposure.BorderStyle = BorderStyle.None;
+            sunExposure.Font = new Font("Segoe UI", 16F);
+            sunExposure.ForeColor = Color.FromArgb(178, 193, 208);
+            sunExposure.Location = new Point(1184, 1001);
+            sunExposure.Name = "sunExposure";
+            sunExposure.Size = new Size(136, 29);
+            sunExposure.TabIndex = 11;
+            // 
+            // current
+            // 
+            current.BackColor = Color.FromArgb(65, 71, 95);
+            current.BorderStyle = BorderStyle.None;
+            current.Font = new Font("Segoe UI", 20F);
+            current.ForeColor = Color.FromArgb(219, 165, 30);
+            current.Location = new Point(1540, 887);
+            current.Name = "current";
+            current.Size = new Size(136, 36);
+            current.TabIndex = 12;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(219, 166, 30);
+            button1.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 20F);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1494, 956);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Padding = new Padding(14, 0, 0, 0);
+            button1.Size = new Size(240, 58);
+            button1.TabIndex = 6;
+            button1.Text = "Select Location";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // TMLocationSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -362,6 +513,18 @@
             BackgroundImage = Properties.Resources.page_template;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(button1);
+            Controls.Add(current);
+            Controls.Add(sunExposure);
+            Controls.Add(stability);
+            Controls.Add(humidity);
+            Controls.Add(weather);
+            Controls.Add(coordinates);
+            Controls.Add(campground);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox1);
             DoubleBuffered = true;
@@ -375,7 +538,12 @@
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -397,5 +565,17 @@
         private Panel SubPanelEmergency;
         private Button SubEmergNav1;
         private Button SubExplore4;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
+        private TextBox campground;
+        private TextBox coordinates;
+        private TextBox weather;
+        private TextBox humidity;
+        private TextBox stability;
+        private TextBox sunExposure;
+        private TextBox current;
+        private Button button1;
     }
 }

@@ -21,6 +21,24 @@ namespace SmartTent
             SubPanelEmergency.Visible = false;
             MainExploreNearby.Location = new Point(0, 240);
             MainEmergencyNav.Location = new Point(0, 280);
+
+
+            Image campsite1Normal = Properties.Resources.campsite1_n;
+            Image campsite1Hover = Properties.Resources.campsite1_y;
+
+            Image campsite2Normal = Properties.Resources.campsite2_n;
+            Image campsite2Hover = Properties.Resources.campsite2_y;
+
+            Image campsite3Normal = Properties.Resources.campsite3_n;
+            Image campsite3Hover = Properties.Resources.campsite3_y;
+
+            Image campsite4Normal = Properties.Resources.campsite4_n;
+            Image campsite4Hover = Properties.Resources.campsite4_y1;
+
+            changeOnHover(pictureBox1, campsite1Normal, campsite1Hover, 1);
+            changeOnHover(pictureBox2, campsite2Normal, campsite2Hover, 2);
+            changeOnHover(pictureBox3, campsite3Normal, campsite3Hover, 3);
+            changeOnHover(pictureBox4, campsite4Normal, campsite4Hover, 4);
         }
 
 
@@ -93,6 +111,70 @@ namespace SmartTent
 
         }
 
+       /* private void changeOnHover(PictureBox pictureBox, Image normal, Image hover, int camp)
+        {
+            pictureBox.MouseHover += (sender, e) =>
+            {
+                pictureBox.Image = hover;
+
+                switch (camp)
+                {
+                    case 1:
+                        campground.Text = "Campsite 1";
+                        current.Text = "Campsite 1";
+                        coordinates.Text = "25°27'32.0\"N 32°57'21.2\"W";
+                        weather.Text = "Rainy";
+                        humidity.Text = "90%";
+                        stability.Text = "100%";
+                        sunExposure.Text = "Low";
+                        break;
+
+                    case 2:
+                        campground.Text = "Campsite 2";
+                        current.Text = "Campsite 2";
+                        coordinates.Text = "25°27'32.0\"N 32°67'21.2\"W";
+                        weather.Text = "Rainy";
+                        humidity.Text = "90%";
+                        stability.Text = "100%";
+                        sunExposure.Text = "Medium";
+                        break;
+
+                    case 3:
+                        campground.Text = "Campsite 3";
+                        current.Text = "Campsite 3";
+                        coordinates.Text = "25°28'32.0\"N 32°75'21.2\"W";
+                        weather.Text = "Rainy";
+                        humidity.Text = "95%";
+                        stability.Text = "100%";
+                        sunExposure.Text = "Medium";
+                        break;
+
+                    case 4:
+                        campground.Text = "Campsite 4";
+                        current.Text = "Campsite 4";
+                        coordinates.Text = "25°21'32.0\"N 32°70'21.2\"W";
+                        weather.Text = "Rainy";
+                        humidity.Text = "85%";
+                        stability.Text = "100%";
+                        sunExposure.Text = "Low";
+                        break;
+                }
+            };
+            pictureBox.MouseLeave += (sender, e) =>
+            {
+                pictureBox.Image = normal;
+                campground.Text = "";
+                current.Text = "";
+                coordinates.Text = "";
+                weather.Text = "";
+                humidity.Text = "";
+                stability.Text = "";
+                sunExposure.Text = "";
+            };
+
+
+        }*/
+
         private void TMLocationSelection_Load(object sender, EventArgs e)
         {
 
@@ -138,20 +220,150 @@ namespace SmartTent
             energy.Show();
             this.Hide();
         }
-
-        private void SubEmergNav2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TMLocationSelection_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void SubTent1_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            campground.Text = "Campsite 1";
+            current.Text = "Campsite 1";
+            coordinates.Text = "25°27'32.0\"N 32°57'21.2\"W";
+            weather.Text = "Rainy";
+            humidity.Text = "90%";
+            stability.Text = "100%";
+            sunExposure.Text = "Low";
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            campground.Text = "Campsite 2";
+            current.Text = "Campsite 2";
+            coordinates.Text = "25°27'32.0\"N 32°67'21.2\"W";
+            weather.Text = "Rainy";
+            humidity.Text = "90%";
+            stability.Text = "100%";
+            sunExposure.Text = "Medium";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            campground.Text = "Campsite 3";
+            current.Text = "Campsite 3";
+            coordinates.Text = "25°28'32.0\"N 32°75'21.2\"W";
+            weather.Text = "Rainy";
+            humidity.Text = "95%";
+            stability.Text = "100%";
+            sunExposure.Text = "Medium";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            campground.Text = "Campsite 4";
+            current.Text = "Campsite 4";
+            coordinates.Text = "25°21'32.0\"N 32°70'21.2\"W";
+            weather.Text = "Rainy";
+            humidity.Text = "85%";
+            stability.Text = "100%";
+            sunExposure.Text = "Low";
+        }
+
+        private PictureBox selectedPictureBox = null;
+
+        private void changeOnHover(PictureBox pictureBox, Image normal, Image hover, int camp)
+        {
+            // Handle hover effect
+            pictureBox.MouseEnter += (sender, e) =>
+            {
+                if (selectedPictureBox != pictureBox) // Only change if not selected
+                {
+                    pictureBox.Image = hover;
+                }
+            };
+
+            pictureBox.MouseLeave += (sender, e) =>
+            {
+                if (selectedPictureBox != pictureBox) // Only change if not selected
+                {
+                    pictureBox.Image = normal;
+                }
+            };
+
+            // Handle click to select
+            pictureBox.Click += (sender, e) =>
+            {
+                if (selectedPictureBox != null) // Reset previously selected PictureBox
+                {
+                    selectedPictureBox.Image = GetNormalImage(selectedPictureBox); // Retrieve normal image
+                }
+
+                selectedPictureBox = pictureBox; // Set new selection
+                pictureBox.Image = hover; // Keep hover image on selection
+
+                UpdateCampsiteInfo(camp); // Update displayed information
+            };
+        }
+
+        // Helper method to get the normal image of a PictureBox
+        private Image GetNormalImage(PictureBox pictureBox)
+        {
+            if (pictureBox == pictureBox1) return Properties.Resources.campsite1_n;
+            if (pictureBox == pictureBox2) return Properties.Resources.campsite2_n;
+            if (pictureBox == pictureBox3) return Properties.Resources.campsite3_n;
+            if (pictureBox == pictureBox4) return Properties.Resources.campsite4_n;
+            return null;
+        }
+
+        // Helper method to update campsite information
+        private void UpdateCampsiteInfo(int camp)
+        {
+            switch (camp)
+            {
+                case 1:
+                    campground.Text = "Campsite 1";
+                    current.Text = "Campsite 1";
+                    coordinates.Text = "25°27'32.0\"N 32°57'21.2\"W";
+                    weather.Text = "Rainy";
+                    humidity.Text = "90%";
+                    stability.Text = "100%";
+                    sunExposure.Text = "Low";
+                    break;
+
+                case 2:
+                    campground.Text = "Campsite 2";
+                    current.Text = "Campsite 2";
+                    coordinates.Text = "25°27'32.0\"N 32°67'21.2\"W";
+                    weather.Text = "Rainy";
+                    humidity.Text = "90%";
+                    stability.Text = "100%";
+                    sunExposure.Text = "Medium";
+                    break;
+
+                case 3:
+                    campground.Text = "Campsite 3";
+                    current.Text = "Campsite 3";
+                    coordinates.Text = "25°28'32.0\"N 32°75'21.2\"W";
+                    weather.Text = "Rainy";
+                    humidity.Text = "95%";
+                    stability.Text = "100%";
+                    sunExposure.Text = "Medium";
+                    break;
+
+                case 4:
+                    campground.Text = "Campsite 4";
+                    current.Text = "Campsite 4";
+                    coordinates.Text = "25°21'32.0\"N 32°70'21.2\"W";
+                    weather.Text = "Rainy";
+                    humidity.Text = "85%";
+                    stability.Text = "100%";
+                    sunExposure.Text = "Low";
+                    break;
+            }
+        }
+
+
+
     }
 }
