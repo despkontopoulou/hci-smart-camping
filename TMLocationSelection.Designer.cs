@@ -260,6 +260,7 @@
             SubExplore1.Text = "Local Attractions";
             SubExplore1.TextAlign = ContentAlignment.TopLeft;
             SubExplore1.UseVisualStyleBackColor = true;
+            SubExplore1.Click += SubExplore1_Click;
             // 
             // SubPanelTent
             // 
@@ -403,7 +404,7 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(195, 241, 213);
-            pictureBox1.Image = Properties.Resources.campsite1_n;
+            pictureBox1.Image = Properties.Resources.campsite1_n1;
             pictureBox1.Location = new Point(1322, 422);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(156, 105);
@@ -512,7 +513,7 @@
             button1.TabIndex = 6;
             button1.Text = "Select Location";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click_1;
+            button1.Click += SelectLocationClick;
             // 
             // TMLocationSelection
             // 
@@ -542,7 +543,6 @@
             Name = "TMLocationSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
-            Load += TMLocationSelection_Load;
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);

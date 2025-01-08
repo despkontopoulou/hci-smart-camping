@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SmartTent.Helpers;
 
 namespace SmartTent
 {
@@ -95,7 +96,7 @@ namespace SmartTent
 
         private void SubTent1_Click(object sender, EventArgs e)
         {
-            TMLocationSelection locationSelection = new TMLocationSelection();
+            TMLocationSelection locationSelection = new TMLocationSelection(SharedData.SelectedLocation);
             locationSelection.Show();
             this.Hide();
         }

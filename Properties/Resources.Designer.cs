@@ -63,6 +63,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap campsite1_g {
+            get {
+                object obj = ResourceManager.GetObject("campsite1-g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap campsite1_n {
             get {
                 object obj = ResourceManager.GetObject("campsite1-n", resourceCulture);
@@ -93,6 +103,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap campsite2_g {
+            get {
+                object obj = ResourceManager.GetObject("campsite2-g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap campsite2_n {
             get {
                 object obj = ResourceManager.GetObject("campsite2-n", resourceCulture);
@@ -113,6 +133,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap campsite3_g {
+            get {
+                object obj = ResourceManager.GetObject("campsite3-g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap campsite3_n {
             get {
                 object obj = ResourceManager.GetObject("campsite3-n", resourceCulture);
@@ -126,6 +156,16 @@ namespace SmartTent.Properties {
         internal static System.Drawing.Bitmap campsite3_y {
             get {
                 object obj = ResourceManager.GetObject("campsite3-y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap campsite4_g {
+            get {
+                object obj = ResourceManager.GetObject("campsite4-g", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
