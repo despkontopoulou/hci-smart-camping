@@ -13,6 +13,7 @@ namespace SmartTent
 {
     public partial class TMLocationSelection : Form
     {
+
         public TMLocationSelection()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace SmartTent
             changeOnHover(pictureBox2, campsite2Normal, campsite2Hover, 2);
             changeOnHover(pictureBox3, campsite3Normal, campsite3Hover, 3);
             changeOnHover(pictureBox4, campsite4Normal, campsite4Hover, 4);
+
         }
 
         public TMLocationSelection(int selectedLocation)
@@ -65,16 +67,19 @@ namespace SmartTent
             Image campsite4Normal = Properties.Resources.campsite4_n;
             Image campsite4Hover = Properties.Resources.campsite4_y1;
 
-            changeOnHover(pictureBox1, campsite1Normal, campsite1Hover, 1);
-            changeOnHover(pictureBox2, campsite2Normal, campsite2Hover, 2);
-            changeOnHover(pictureBox3, campsite3Normal, campsite3Hover, 3);
-            changeOnHover(pictureBox4, campsite4Normal, campsite4Hover, 4);
 
-            if (selectedLocation > 0) {
+
+            if (selectedLocation > 0)
+            {
                 clickedCamp = selectedLocation;
                 UpdateCampsiteInfo(clickedCamp);
                 SelectLocationClick(this, EventArgs.Empty);
+
+                hopeNotify1.Text = "Location has been finalized";
+                hopeNotify1.Visible = true;
+
             }
+
         }
 
         private int clickedCamp = 0;
@@ -125,6 +130,7 @@ namespace SmartTent
             }
 
         }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -285,6 +291,7 @@ namespace SmartTent
         {
             if (clickedCamp != 0)
             {
+                hopeNotify1.Visible = true;
                 button1.Text = "Selected Location";
                 SharedData.SelectedLocation = clickedCamp;
                 button1.BackColor = Color.FromArgb(19, 168, 36);
@@ -309,6 +316,7 @@ namespace SmartTent
                     pictureBox4.Image = Properties.Resources.campsite4_g;
                 }
                 lastClickedCamp = clickedCamp;
+
             }
         }
 
@@ -336,8 +344,6 @@ namespace SmartTent
         {
 
         }
-
-        
     }
 
 }

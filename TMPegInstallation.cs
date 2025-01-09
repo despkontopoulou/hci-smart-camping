@@ -96,9 +96,18 @@ namespace SmartTent
 
         private void SubTent1_Click(object sender, EventArgs e)
         {
-            TMLocationSelection locationSelection = new TMLocationSelection(SharedData.SelectedLocation);
-            locationSelection.Show();
-            this.Hide();
+            if (SharedData.SelectedLocation > 0)
+            {
+                TMLocationSelection locationSelection = new TMLocationSelection(SharedData.SelectedLocation);
+                locationSelection.Show();
+                this.Hide();
+            }
+            else
+            {
+                TMLocationSelection locationSelection = new TMLocationSelection();
+                locationSelection.Show();
+                this.Hide();
+            }
         }
 
         private void SubTent3_Click(object sender, EventArgs e)
@@ -153,6 +162,81 @@ namespace SmartTent
                 SubPanelExplore.Visible = false;
             }
             placeButtons();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rotationMinus_Click(object sender, EventArgs e)
+        {
+            string textbox = rotation.Text;
+            string strAngle = textbox.Substring(0, textbox.Length - 1);
+            int angle = Convert.ToInt32(strAngle);
+
+            if (angle > 30)
+            {
+                angle--;
+                rotation.Text = angle + "°";
+            }
+
+
+        }
+        private void rotationPlus_Click(object sender, EventArgs e)
+        {
+            string textbox = rotation.Text;
+            string strAngle = textbox.Substring(0, textbox.Length - 1);
+            int angle = Convert.ToInt32(strAngle);
+
+            if (angle < 50)
+            {
+                angle++;
+                rotation.Text = angle + "%";
+            }
+
+
+        }
+
+        private void pressureMinus_Click(object sender, EventArgs e)
+        {
+            string textbox = pressure.Text;
+            string strPressure = textbox.Substring(0, textbox.Length - 1);
+            int pressureInt = Convert.ToInt32(strPressure);
+
+            if (pressureInt > 50)
+            {
+                pressureInt--;
+                pressure.Text = pressureInt + "%";
+            }
+
+
+        }
+        private void pressurePlus_Click(object sender, EventArgs e)
+        {
+            string textbox = pressure.Text;
+            string strPressure = textbox.Substring(0, textbox.Length - 1);
+            int pressureInt = Convert.ToInt32(strPressure);
+
+            if (pressureInt < 50)
+            {
+                pressureInt++;
+                pressure.Text = pressureInt + "%";
+            }
+
+
+        }
+
+
+
+        private void rotationMinus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

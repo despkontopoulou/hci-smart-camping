@@ -360,6 +360,7 @@
             Controls.Add(nightControlBox2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TMEnergy";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TMEnergy";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);

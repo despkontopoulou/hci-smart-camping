@@ -57,6 +57,7 @@
             sunExposure = new TextBox();
             current = new TextBox();
             button1 = new Button();
+            hopeNotify1 = new ReaLTaiizor.Controls.HopeNotify();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -515,6 +516,29 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += SelectLocationClick;
             // 
+            // hopeNotify1
+            // 
+            hopeNotify1.BackColor = SystemColors.Window;
+            hopeNotify1.Close = true;
+            hopeNotify1.CloseColor = Color.FromArgb(144, 148, 154);
+            hopeNotify1.ErrorBackColor = Color.FromArgb(25, 245, 108, 108);
+            hopeNotify1.ErrorTextColor = Color.FromArgb(245, 108, 108);
+            hopeNotify1.Font = new Font("Segoe UI", 18F);
+            hopeNotify1.InfoBackColor = Color.FromArgb(25, 144, 147, 153);
+            hopeNotify1.InfoTextColor = Color.FromArgb(144, 147, 153);
+            hopeNotify1.Location = new Point(983, 12);
+            hopeNotify1.Name = "hopeNotify1";
+            hopeNotify1.RightToLeft = RightToLeft.Yes;
+            hopeNotify1.Size = new Size(433, 34);
+            hopeNotify1.SuccessBackColor = Color.FromArgb(25, 103, 194, 58);
+            hopeNotify1.SuccessTextColor = Color.Green;
+            hopeNotify1.TabIndex = 13;
+            hopeNotify1.Text = "Leaving this form finalizes location";
+            hopeNotify1.Type = ReaLTaiizor.Controls.HopeNotify.AlertType.Success;
+            hopeNotify1.Visible = false;
+            hopeNotify1.WarningBackColor = Color.FromArgb(25, 230, 162, 60);
+            hopeNotify1.WarningTextColor = Color.FromArgb(230, 162, 60);
+            // 
             // TMLocationSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -523,6 +547,7 @@
             BackgroundImage = Properties.Resources.page_template;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(hopeNotify1);
             Controls.Add(button1);
             Controls.Add(current);
             Controls.Add(sunExposure);
@@ -586,5 +611,6 @@
         private TextBox sunExposure;
         private TextBox current;
         private Button button1;
+        private ReaLTaiizor.Controls.HopeNotify hopeNotify1;
     }
 }

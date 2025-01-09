@@ -45,6 +45,13 @@
             SubTent2 = new Button();
             SubTent1 = new Button();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
+            rotation = new TextBox();
+            pressure = new TextBox();
+            rotationMinus = new Button();
+            button3 = new Button();
+            rotationPlus = new Button();
+            pressureMinus = new Button();
+            pressurePlus = new Button();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -65,6 +72,7 @@
             MainPanel.Name = "MainPanel";
             MainPanel.Size = new Size(325, 596);
             MainPanel.TabIndex = 2;
+            MainPanel.Paint += MainPanel_Paint;
             // 
             // MainExploreNearby
             // 
@@ -350,6 +358,110 @@
             nightControlBox1.Size = new Size(139, 31);
             nightControlBox1.TabIndex = 6;
             // 
+            // rotation
+            // 
+            rotation.BackColor = Color.FromArgb(65, 71, 95);
+            rotation.BorderStyle = BorderStyle.None;
+            rotation.Font = new Font("Segoe UI", 18F);
+            rotation.ForeColor = Color.FromArgb(178, 193, 208);
+            rotation.Location = new Point(1666, 629);
+            rotation.Name = "rotation";
+            rotation.Size = new Size(42, 32);
+            rotation.TabIndex = 7;
+            rotation.Text = "45°";
+            rotation.TextChanged += textBox1_TextChanged;
+            // 
+            // pressure
+            // 
+            pressure.BackColor = Color.FromArgb(65, 71, 95);
+            pressure.BorderStyle = BorderStyle.None;
+            pressure.Font = new Font("Segoe UI", 18F);
+            pressure.ForeColor = Color.FromArgb(178, 193, 208);
+            pressure.Location = new Point(1666, 689);
+            pressure.Name = "pressure";
+            pressure.Size = new Size(65, 32);
+            pressure.TabIndex = 8;
+            pressure.Text = "100%";
+            // 
+            // rotationMinus
+            // 
+            rotationMinus.BackColor = Color.FromArgb(65, 71, 95);
+            rotationMinus.FlatAppearance.BorderSize = 0;
+            rotationMinus.FlatStyle = FlatStyle.Flat;
+            rotationMinus.Font = new Font("Segoe UI", 20F);
+            rotationMinus.ForeColor = Color.FromArgb(219, 166, 30);
+            rotationMinus.ImageAlign = ContentAlignment.MiddleRight;
+            rotationMinus.Location = new Point(1635, 619);
+            rotationMinus.Name = "rotationMinus";
+            rotationMinus.Size = new Size(22, 48);
+            rotationMinus.TabIndex = 13;
+            rotationMinus.Text = "-";
+            rotationMinus.UseVisualStyleBackColor = false;
+            rotationMinus.Click += rotationMinus_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(65, 71, 95);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 20F);
+            button3.ForeColor = Color.FromArgb(219, 166, 30);
+            button3.ImageAlign = ContentAlignment.MiddleRight;
+            button3.Location = new Point(1726, 673);
+            button3.Name = "button3";
+            button3.Size = new Size(22, 48);
+            button3.TabIndex = 15;
+            button3.Text = "-";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // rotationPlus
+            // 
+            rotationPlus.BackColor = Color.FromArgb(65, 71, 95);
+            rotationPlus.FlatAppearance.BorderSize = 0;
+            rotationPlus.FlatStyle = FlatStyle.Flat;
+            rotationPlus.Font = new Font("Segoe UI", 20F);
+            rotationPlus.ForeColor = Color.FromArgb(219, 166, 30);
+            rotationPlus.ImageAlign = ContentAlignment.MiddleRight;
+            rotationPlus.Location = new Point(1714, 619);
+            rotationPlus.Name = "rotationPlus";
+            rotationPlus.Size = new Size(22, 48);
+            rotationPlus.TabIndex = 16;
+            rotationPlus.Text = "+";
+            rotationPlus.UseVisualStyleBackColor = false;
+            rotationPlus.Click += rotationPlus_Click;
+            // 
+            // pressureMinus
+            // 
+            pressureMinus.BackColor = Color.FromArgb(65, 71, 95);
+            pressureMinus.FlatAppearance.BorderSize = 0;
+            pressureMinus.FlatStyle = FlatStyle.Flat;
+            pressureMinus.Font = new Font("Segoe UI", 20F);
+            pressureMinus.ForeColor = Color.FromArgb(219, 166, 30);
+            pressureMinus.ImageAlign = ContentAlignment.MiddleRight;
+            pressureMinus.Location = new Point(1638, 674);
+            pressureMinus.Name = "pressureMinus";
+            pressureMinus.Size = new Size(22, 48);
+            pressureMinus.TabIndex = 17;
+            pressureMinus.Text = "-";
+            pressureMinus.UseVisualStyleBackColor = false;
+            pressureMinus.Click += pressureMinus_Click;
+            // 
+            // pressurePlus
+            // 
+            pressurePlus.BackColor = Color.FromArgb(65, 71, 95);
+            pressurePlus.FlatAppearance.BorderSize = 0;
+            pressurePlus.FlatStyle = FlatStyle.Flat;
+            pressurePlus.Font = new Font("Segoe UI", 20F);
+            pressurePlus.ForeColor = Color.FromArgb(219, 166, 30);
+            pressurePlus.ImageAlign = ContentAlignment.MiddleRight;
+            pressurePlus.Location = new Point(1726, 674);
+            pressurePlus.Name = "pressurePlus";
+            pressurePlus.Size = new Size(22, 48);
+            pressurePlus.TabIndex = 18;
+            pressurePlus.Text = "+";
+            pressurePlus.UseVisualStyleBackColor = false;
+            pressurePlus.Click += pressurePlus_Click;
+            // 
             // TMPegInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -358,6 +470,13 @@
             BackgroundImage = Properties.Resources.TMPegInstallation;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(pressurePlus);
+            Controls.Add(pressureMinus);
+            Controls.Add(rotationPlus);
+            Controls.Add(button3);
+            Controls.Add(rotationMinus);
+            Controls.Add(pressure);
+            Controls.Add(rotation);
             Controls.Add(nightControlBox1);
             Controls.Add(MainPanel);
             DoubleBuffered = true;
@@ -370,6 +489,7 @@
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -391,5 +511,12 @@
         private Button SubTent2;
         private Button SubTent1;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
+        private TextBox rotation;
+        private TextBox pressure;
+        private Button rotationMinus;
+        private Button button3;
+        private Button rotationPlus;
+        private Button pressureMinus;
+        private Button pressurePlus;
     }
 }
