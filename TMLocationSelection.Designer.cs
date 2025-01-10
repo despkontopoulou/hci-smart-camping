@@ -526,7 +526,7 @@
             hopeNotify1.Font = new Font("Segoe UI", 18F);
             hopeNotify1.InfoBackColor = Color.FromArgb(25, 144, 147, 153);
             hopeNotify1.InfoTextColor = Color.FromArgb(144, 147, 153);
-            hopeNotify1.Location = new Point(980, 12);
+            hopeNotify1.Location = new Point(859, 12);
             hopeNotify1.Name = "hopeNotify1";
             hopeNotify1.RightToLeft = RightToLeft.Yes;
             hopeNotify1.Size = new Size(461, 34);

@@ -105,7 +105,7 @@ namespace SmartTent
             string strQuant = textbox.Substring(0, textbox.Length);
             int quant = Convert.ToInt32(strQuant);
 
-            if (quant > 2)
+            if (quant > 1)
             {
                 quant--;
                 quantity.Text = quant + "";

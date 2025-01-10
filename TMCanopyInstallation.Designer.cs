@@ -385,9 +385,9 @@
             status1.ForeColor = Color.FromArgb(152, 52, 52);
             status1.Location = new Point(1574, 372);
             status1.Name = "status1";
-            status1.Size = new Size(308, 25);
+            status1.Size = new Size(300, 25);
             status1.TabIndex = 9;
-            status1.Text = "Retraction of canopies not suggested";
+            status1.Text = "Deployment of canopies suggested ";
             status1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // status2

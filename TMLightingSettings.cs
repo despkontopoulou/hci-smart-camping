@@ -170,11 +170,13 @@ namespace SmartTent
             {
                 customLightingPanel.Visible = false;
                 automaticLightingLabel.Visible = false;
+                this.BackgroundImage = Properties.Resources.Group_2193;
             }
             else
             {
                 customLightingPanel.Visible = true;
                 automaticLightingLabel.Visible = true;
+                this.BackgroundImage = Properties.Resources.automatic_lighting;
             }
         }
     }
