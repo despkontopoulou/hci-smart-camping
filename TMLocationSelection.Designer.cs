@@ -223,7 +223,7 @@
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
             SubExplore4.UseVisualStyleBackColor = true;
-            SubExplore4.Click += SubExplore4_Click;
+            SubExplore4.Click += SubExplore3_Click;
             // 
             // SubExplore3
             // 
@@ -242,7 +242,7 @@
             SubExplore3.Text = "Services";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
-            SubExplore3.Click += SubExplore3_Click;
+            SubExplore3.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 

@@ -341,6 +341,7 @@
             SubTent1.Text = "Location Selection";
             SubTent1.TextAlign = ContentAlignment.TopLeft;
             SubTent1.UseVisualStyleBackColor = true;
+            SubTent1.Click += SubTent1_Click;
             // 
             // EXAttractions
             // 

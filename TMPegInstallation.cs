@@ -22,8 +22,24 @@ namespace SmartTent
             SubPanelEmergency.Visible = false;
             MainExploreNearby.Location = new Point(0, 240);
             MainEmergencyNav.Location = new Point(0, 280);
-        }
 
+        }
+        public TMPegInstallation(string rotation, string pressure)
+        {
+            InitializeComponent();
+            this.DoubleBuffered = true;
+            SubPanelTent.Visible = true;
+            SubPanelExplore.Visible = false;
+            SubPanelEmergency.Visible = false;
+            MainExploreNearby.Location = new Point(0, 240);
+            MainEmergencyNav.Location = new Point(0, 280);
+
+            lastRotation = rotation;
+            lastPressure = pressure;
+            UpdateInstallStatus();
+        }
+        public string lastRotation = "";
+        public string lastPressure = "";
 
         private void SubTent2_Click(object sender, EventArgs e)
         {
@@ -164,11 +180,6 @@ namespace SmartTent
             placeButtons();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rotationMinus_Click(object sender, EventArgs e)
         {
             string textbox = rotation.Text;
@@ -179,8 +190,8 @@ namespace SmartTent
             {
                 angle--;
                 rotation.Text = angle + "°";
+                updateCurrentInstallation();
             }
-
 
         }
         private void rotationPlus_Click(object sender, EventArgs e)
@@ -192,7 +203,8 @@ namespace SmartTent
             if (angle < 50)
             {
                 angle++;
-                rotation.Text = angle + "%";
+                rotation.Text = angle + "°";
+                updateCurrentInstallation();
             }
 
 
@@ -208,6 +220,7 @@ namespace SmartTent
             {
                 pressureInt--;
                 pressure.Text = pressureInt + "%";
+                updateCurrentInstallation();
             }
 
 
@@ -218,25 +231,64 @@ namespace SmartTent
             string strPressure = textbox.Substring(0, textbox.Length - 1);
             int pressureInt = Convert.ToInt32(strPressure);
 
-            if (pressureInt < 50)
+            if (pressureInt < 100)
             {
                 pressureInt++;
                 pressure.Text = pressureInt + "%";
+                updateCurrentInstallation();
             }
 
 
         }
-
-
-
-        private void rotationMinus_TextChanged(object sender, EventArgs e)
+        private void updateCurrentInstallation()
         {
+            currentInstallation.Text = rotation.Text + ", " + pressure.Text;
+            UpdateInstallStatus();
+        }
+        private void UpdateInstallStatus()
+        {
+            if (rotation.Text == "45°" && pressure.Text == "100%")
+            {
+                installationState.Text = "Optimal";
+                installationState.ForeColor = Color.MediumSeaGreen;
+            }
+            else
+            {
+                installationState.Text = "Not Optimal";
+                installationState.ForeColor = Color.Khaki;
+            }
 
+            if (rotation.Text != lastRotation || pressure.Text != lastPressure)
+            {
+                InstallPegsButton.Text = "Install Pegs";
+                InstallPegsButton.BackColor = Color.FromArgb(219, 166, 30);
+                InstallPegsButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(230, 160, 66);
+                InstallPegsButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(198, 137, 64);
+
+            }
+            else {
+                InstallPegsButton.Text = "Selected Installation";
+                InstallPegsButton.BackColor = Color.Green;
+                InstallPegsButton.FlatAppearance.MouseOverBackColor = Color.Green;
+                InstallPegsButton.FlatAppearance.MouseDownBackColor = Color.Green;
+            }
         }
 
-        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        private void InstallPegsButton_Click(object sender, EventArgs e)
         {
+            string currentRotation= rotation.Text;
+            string currentPressure= pressure.Text;
+            if (currentRotation != lastRotation || currentPressure != lastPressure)
+            {
+                SharedData.SelectedRotation = currentRotation;
+                SharedData.SelectedPressure = currentPressure;
+                lastRotation = currentRotation;
+                lastPressure = currentPressure;
+                UpdateInstallStatus();
 
+            }
+            //if its not changed we dont need to do anything
         }
+
     }
 }

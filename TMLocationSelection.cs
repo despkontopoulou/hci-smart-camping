@@ -134,9 +134,17 @@ namespace SmartTent
 
         private void button3_Click(object sender, EventArgs e)
         {
-            TMPegInstallation pegInstallation = new TMPegInstallation();
-            pegInstallation.Show();
-            this.Hide();
+            if (SharedData.SelectedRotation == "")
+            {
+                TMPegInstallation pegInstallation = new TMPegInstallation();
+                pegInstallation.Show();
+                this.Hide();
+            }
+            else {
+                TMPegInstallation pegInstallation = new TMPegInstallation(SharedData.SelectedRotation,SharedData.SelectedPressure);
+                pegInstallation.Show();
+                this.Hide();
+            }
 
         }
 
@@ -322,27 +330,30 @@ namespace SmartTent
 
         private void SubEmergNav1_Click(object sender, EventArgs e)
         {
+            EXAttractions attractions = new EXAttractions();
+            attractions.Show();
+            this.Hide();
 
         }
-
-        private void SubExplore3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SubExplore2_Click(object sender, EventArgs e)
         {
-
+            EXServices services = new EXServices();
+            services.Show();
+            this.Hide();
         }
-
-        private void SubExplore4_Click(object sender, EventArgs e)
+        private void SubExplore3_Click(object sender, EventArgs e)
         {
+            EXWeather weather = new EXWeather();
+            weather.Show();
+            this.Hide();
 
         }
 
         private void SubExplore1_Click(object sender, EventArgs e)
         {
-
+            ENShelters shelters = new ENShelters();
+            shelters.Show();
+            this.Hide();
         }
     }
 

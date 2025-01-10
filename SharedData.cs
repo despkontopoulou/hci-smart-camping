@@ -9,4 +9,7 @@ namespace SmartTent.Helpers;
 public static class SharedData
 {
     public static int SelectedLocation { get; set; }
+    public static string SelectedRotation {  get; set; }
+    public static string SelectedPressure { get; set; }
+
 }

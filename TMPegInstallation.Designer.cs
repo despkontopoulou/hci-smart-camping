@@ -52,6 +52,9 @@
             rotationPlus = new Button();
             pressureMinus = new Button();
             pressurePlus = new Button();
+            currentInstallation = new TextBox();
+            InstallPegsButton = new Button();
+            installationState = new TextBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -72,7 +75,6 @@
             MainPanel.Name = "MainPanel";
             MainPanel.Size = new Size(325, 596);
             MainPanel.TabIndex = 2;
-            MainPanel.Paint += MainPanel_Paint;
             // 
             // MainExploreNearby
             // 
@@ -91,7 +93,6 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
-            MainExploreNearby.Click += MainExploreNearby_Click;
             // 
             // MainTentManagement
             // 
@@ -328,7 +329,7 @@
             SubTent1.Margin = new Padding(2);
             SubTent1.Name = "SubTent1";
             SubTent1.Padding = new Padding(14, 0, 0, 0);
-            SubTent1.Size = new Size(316, 40);
+            SubTent1.Size = new Size(297, 40);
             SubTent1.TabIndex = 1;
             SubTent1.Text = "Location Selection";
             SubTent1.TextAlign = ContentAlignment.TopLeft;
@@ -364,12 +365,13 @@
             rotation.BorderStyle = BorderStyle.None;
             rotation.Font = new Font("Segoe UI", 18F);
             rotation.ForeColor = Color.FromArgb(178, 193, 208);
-            rotation.Location = new Point(1666, 629);
+            rotation.Location = new Point(1652, 629);
             rotation.Name = "rotation";
-            rotation.Size = new Size(42, 32);
+            rotation.ReadOnly = true;
+            rotation.Size = new Size(64, 32);
             rotation.TabIndex = 7;
             rotation.Text = "45°";
-            rotation.TextChanged += textBox1_TextChanged;
+            rotation.TextAlign = HorizontalAlignment.Center;
             // 
             // pressure
             // 
@@ -377,11 +379,13 @@
             pressure.BorderStyle = BorderStyle.None;
             pressure.Font = new Font("Segoe UI", 18F);
             pressure.ForeColor = Color.FromArgb(178, 193, 208);
-            pressure.Location = new Point(1666, 689);
+            pressure.Location = new Point(1652, 686);
             pressure.Name = "pressure";
-            pressure.Size = new Size(65, 32);
+            pressure.ReadOnly = true;
+            pressure.Size = new Size(84, 32);
             pressure.TabIndex = 8;
             pressure.Text = "100%";
+            pressure.TextAlign = HorizontalAlignment.Center;
             // 
             // rotationMinus
             // 
@@ -462,6 +466,52 @@
             pressurePlus.UseVisualStyleBackColor = false;
             pressurePlus.Click += pressurePlus_Click;
             // 
+            // currentInstallation
+            // 
+            currentInstallation.BackColor = Color.FromArgb(65, 71, 95);
+            currentInstallation.BorderStyle = BorderStyle.None;
+            currentInstallation.Font = new Font("Segoe UI", 22F);
+            currentInstallation.ForeColor = Color.FromArgb(219, 166, 30);
+            currentInstallation.Location = new Point(1596, 827);
+            currentInstallation.Name = "currentInstallation";
+            currentInstallation.ReadOnly = true;
+            currentInstallation.Size = new Size(152, 40);
+            currentInstallation.TabIndex = 19;
+            currentInstallation.Text = " 45°, 100%";
+            currentInstallation.TextAlign = HorizontalAlignment.Center;
+            // 
+            // InstallPegsButton
+            // 
+            InstallPegsButton.BackColor = Color.FromArgb(219, 166, 30);
+            InstallPegsButton.FlatAppearance.BorderSize = 0;
+            InstallPegsButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(230, 160, 66);
+            InstallPegsButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(198, 137, 64);
+            InstallPegsButton.FlatStyle = FlatStyle.Flat;
+            InstallPegsButton.Font = new Font("Segoe UI", 20F);
+            InstallPegsButton.ForeColor = Color.White;
+            InstallPegsButton.ImageAlign = ContentAlignment.MiddleRight;
+            InstallPegsButton.Location = new Point(1564, 875);
+            InstallPegsButton.Name = "InstallPegsButton";
+            InstallPegsButton.Size = new Size(216, 48);
+            InstallPegsButton.TabIndex = 20;
+            InstallPegsButton.Text = "Install Pegs";
+            InstallPegsButton.UseVisualStyleBackColor = false;
+            InstallPegsButton.Click += InstallPegsButton_Click;
+            // 
+            // installationState
+            // 
+            installationState.BackColor = Color.FromArgb(65, 71, 95);
+            installationState.BorderStyle = BorderStyle.None;
+            installationState.Font = new Font("Segoe UI", 14F);
+            installationState.ForeColor = Color.MediumSeaGreen;
+            installationState.Location = new Point(1726, 946);
+            installationState.Name = "installationState";
+            installationState.ReadOnly = true;
+            installationState.ShortcutsEnabled = false;
+            installationState.Size = new Size(109, 25);
+            installationState.TabIndex = 21;
+            installationState.Text = "Optimal";
+            // 
             // TMPegInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -470,6 +520,9 @@
             BackgroundImage = Properties.Resources.TMPegInstallation;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(installationState);
+            Controls.Add(InstallPegsButton);
+            Controls.Add(currentInstallation);
             Controls.Add(pressurePlus);
             Controls.Add(pressureMinus);
             Controls.Add(rotationPlus);
@@ -518,5 +571,8 @@
         private Button rotationPlus;
         private Button pressureMinus;
         private Button pressurePlus;
+        private TextBox currentInstallation;
+        private Button InstallPegsButton;
+        private TextBox installationState;
     }
 }
