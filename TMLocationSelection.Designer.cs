@@ -518,7 +518,7 @@
             // 
             // hopeNotify1
             // 
-            hopeNotify1.BackColor = SystemColors.Window;
+            hopeNotify1.BackColor = Color.LightSlateGray;
             hopeNotify1.Close = true;
             hopeNotify1.CloseColor = Color.FromArgb(144, 148, 154);
             hopeNotify1.ErrorBackColor = Color.FromArgb(25, 245, 108, 108);
@@ -526,10 +526,10 @@
             hopeNotify1.Font = new Font("Segoe UI", 18F);
             hopeNotify1.InfoBackColor = Color.FromArgb(25, 144, 147, 153);
             hopeNotify1.InfoTextColor = Color.FromArgb(144, 147, 153);
-            hopeNotify1.Location = new Point(983, 12);
+            hopeNotify1.Location = new Point(980, 12);
             hopeNotify1.Name = "hopeNotify1";
             hopeNotify1.RightToLeft = RightToLeft.Yes;
-            hopeNotify1.Size = new Size(433, 34);
+            hopeNotify1.Size = new Size(461, 34);
             hopeNotify1.SuccessBackColor = Color.FromArgb(25, 103, 194, 58);
             hopeNotify1.SuccessTextColor = Color.Green;
             hopeNotify1.TabIndex = 13;

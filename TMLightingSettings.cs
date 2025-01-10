@@ -103,9 +103,18 @@ namespace SmartTent
 
         private void SubTent2_Click(object sender, EventArgs e)
         {
-            TMPegInstallation pegInstallation = new TMPegInstallation();
-            pegInstallation.Show();
-            this.Hide();
+            if (SharedData.SelectedRotation == null)
+            {
+                TMPegInstallation pegInstallation = new TMPegInstallation();
+                pegInstallation.Show();
+                this.Hide();
+            }
+            else
+            {
+                TMPegInstallation pegInstallation = new TMPegInstallation(SharedData.SelectedRotation, SharedData.SelectedPressure);
+                pegInstallation.Show();
+                this.Hide();
+            }
         }
 
         private void SubTent4_Click(object sender, EventArgs e)

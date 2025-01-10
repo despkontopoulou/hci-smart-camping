@@ -134,7 +134,7 @@ namespace SmartTent
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (SharedData.SelectedRotation == "")
+            if (SharedData.SelectedRotation == null)
             {
                 TMPegInstallation pegInstallation = new TMPegInstallation();
                 pegInstallation.Show();

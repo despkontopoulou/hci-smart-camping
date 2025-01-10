@@ -22,9 +22,11 @@ namespace SmartTent
             SubPanelEmergency.Visible = false;
             MainExploreNearby.Location = new Point(0, 240);
             MainEmergencyNav.Location = new Point(0, 280);
+            lastRotation = "";
+            lastPressure = "";
 
         }
-        public TMPegInstallation(string rotation, string pressure)
+        public TMPegInstallation(string selectedRotation, string selectedPressure)
         {
             InitializeComponent();
             this.DoubleBuffered = true;
@@ -34,12 +36,15 @@ namespace SmartTent
             MainExploreNearby.Location = new Point(0, 240);
             MainEmergencyNav.Location = new Point(0, 280);
 
-            lastRotation = rotation;
-            lastPressure = pressure;
-            UpdateInstallStatus();
+            lastRotation = selectedRotation;
+            lastPressure = selectedPressure;
+            rotation.Text = lastRotation;
+            pressure.Text = lastPressure;
+            updateCurrentInstallation();
+
         }
-        public string lastRotation = "";
-        public string lastPressure = "";
+        public string lastRotation;
+        public string lastPressure;
 
         private void SubTent2_Click(object sender, EventArgs e)
         {
@@ -266,7 +271,8 @@ namespace SmartTent
                 InstallPegsButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(198, 137, 64);
 
             }
-            else {
+            else
+            {
                 InstallPegsButton.Text = "Selected Installation";
                 InstallPegsButton.BackColor = Color.Green;
                 InstallPegsButton.FlatAppearance.MouseOverBackColor = Color.Green;
@@ -276,19 +282,26 @@ namespace SmartTent
 
         private void InstallPegsButton_Click(object sender, EventArgs e)
         {
-            string currentRotation= rotation.Text;
-            string currentPressure= pressure.Text;
-            if (currentRotation != lastRotation || currentPressure != lastPressure)
+            if (SharedData.SelectedLocation > 0)
             {
-                SharedData.SelectedRotation = currentRotation;
-                SharedData.SelectedPressure = currentPressure;
-                lastRotation = currentRotation;
-                lastPressure = currentPressure;
-                UpdateInstallStatus();
+                hopeNotify1.Visible = false;
+                string currentRotation = rotation.Text;
+                string currentPressure = pressure.Text;
+                if (currentRotation != lastRotation || currentPressure != lastPressure)
+                {
+                    SharedData.SelectedRotation = currentRotation;
+                    SharedData.SelectedPressure = currentPressure;
+                    lastRotation = currentRotation;
+                    lastPressure = currentPressure;
+                    UpdateInstallStatus();
 
+                }
+                //if its not changed we dont need to do anything
             }
-            //if its not changed we dont need to do anything
+            else
+            {
+                hopeNotify1.Visible = true;
+            }
         }
-
     }
 }

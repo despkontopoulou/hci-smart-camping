@@ -33,5 +33,21 @@ namespace SmartTent
                 this.Hide();
             }
         }
+
+        private void SubTent2_Click(object sender, EventArgs e)
+        {
+            if (SharedData.SelectedRotation == null)
+            {
+                TMPegInstallation pegInstallation = new TMPegInstallation();
+                pegInstallation.Show();
+                this.Hide();
+            }
+            else
+            {
+                TMPegInstallation pegInstallation = new TMPegInstallation(SharedData.SelectedRotation, SharedData.SelectedPressure);
+                pegInstallation.Show();
+                this.Hide();
+            }
+        }
     }
 }

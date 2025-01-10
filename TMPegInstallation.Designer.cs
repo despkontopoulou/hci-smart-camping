@@ -55,6 +55,8 @@
             currentInstallation = new TextBox();
             InstallPegsButton = new Button();
             installationState = new TextBox();
+            label1 = new Label();
+            hopeNotify1 = new ReaLTaiizor.Controls.HopeNotify();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -93,6 +95,7 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
+            MainExploreNearby.Click += button7_Click;
             // 
             // MainTentManagement
             // 
@@ -512,6 +515,41 @@
             installationState.TabIndex = 21;
             installationState.Text = "Optimal";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Semibold", 36F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.WindowFrame;
+            label1.Location = new Point(1099, 844);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 65);
+            label1.TabIndex = 22;
+            label1.Text = "T";
+            // 
+            // hopeNotify1
+            // 
+            hopeNotify1.BackColor = Color.LightSlateGray;
+            hopeNotify1.Close = true;
+            hopeNotify1.CloseColor = Color.FromArgb(144, 148, 154);
+            hopeNotify1.ErrorBackColor = Color.FromArgb(25, 245, 108, 108);
+            hopeNotify1.ErrorTextColor = Color.FromArgb(245, 108, 108);
+            hopeNotify1.Font = new Font("Segoe UI", 18F);
+            hopeNotify1.InfoBackColor = Color.FromArgb(25, 144, 147, 153);
+            hopeNotify1.InfoTextColor = Color.FromArgb(144, 147, 153);
+            hopeNotify1.Location = new Point(814, 27);
+            hopeNotify1.Name = "hopeNotify1";
+            hopeNotify1.RightToLeft = RightToLeft.Yes;
+            hopeNotify1.Size = new Size(625, 34);
+            hopeNotify1.SuccessBackColor = Color.FromArgb(25, 103, 194, 58);
+            hopeNotify1.SuccessTextColor = Color.Green;
+            hopeNotify1.TabIndex = 23;
+            hopeNotify1.Text = "Unable to install pegs without selected tent location";
+            hopeNotify1.Type = ReaLTaiizor.Controls.HopeNotify.AlertType.Error;
+            hopeNotify1.Visible = false;
+            hopeNotify1.WarningBackColor = Color.FromArgb(25, 230, 162, 60);
+            hopeNotify1.WarningTextColor = Color.FromArgb(230, 162, 60);
+            // 
             // TMPegInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -520,6 +558,8 @@
             BackgroundImage = Properties.Resources.TMPegInstallation;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(hopeNotify1);
+            Controls.Add(label1);
             Controls.Add(installationState);
             Controls.Add(InstallPegsButton);
             Controls.Add(currentInstallation);
@@ -574,5 +614,7 @@
         private TextBox currentInstallation;
         private Button InstallPegsButton;
         private TextBox installationState;
+        private Label label1;
+        private ReaLTaiizor.Controls.HopeNotify hopeNotify1;
     }
 }

@@ -323,6 +323,7 @@
             SubTent2.Text = "Tent Peg Installation";
             SubTent2.TextAlign = ContentAlignment.TopLeft;
             SubTent2.UseVisualStyleBackColor = true;
+            SubTent2.Click += SubTent2_Click;
             // 
             // SubTent1
             // 
