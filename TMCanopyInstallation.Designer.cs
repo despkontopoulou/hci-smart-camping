@@ -46,6 +46,10 @@
             SubTent2 = new Button();
             SubTent1 = new Button();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
+            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            status1 = new Label();
+            status2 = new Label();
+            hopeToggle1 = new ReaLTaiizor.Controls.HopeToggle();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -370,15 +374,76 @@
             nightControlBox1.Size = new Size(139, 31);
             nightControlBox1.TabIndex = 7;
             // 
+            // bigLabel1
+            // 
+            bigLabel1.AutoSize = true;
+            bigLabel1.BackColor = Color.Transparent;
+            bigLabel1.Font = new Font("Segoe UI", 25F);
+            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
+            bigLabel1.Location = new Point(0, 0);
+            bigLabel1.Name = "bigLabel1";
+            bigLabel1.Size = new Size(165, 46);
+            bigLabel1.TabIndex = 8;
+            bigLabel1.Text = "bigLabel1";
+            // 
+            // status1
+            // 
+            status1.AutoSize = true;
+            status1.BackColor = Color.FromArgb(232, 224, 224);
+            status1.Font = new Font("Segoe UI", 13F);
+            status1.ForeColor = Color.FromArgb(152, 52, 52);
+            status1.Location = new Point(1574, 372);
+            status1.Name = "status1";
+            status1.Size = new Size(308, 25);
+            status1.TabIndex = 9;
+            status1.Text = "Retraction of canopies not suggested";
+            status1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // status2
+            // 
+            status2.AutoSize = true;
+            status2.BackColor = Color.FromArgb(232, 224, 224);
+            status2.Font = new Font("Segoe UI", 13F);
+            status2.ForeColor = Color.FromArgb(152, 52, 52);
+            status2.Location = new Point(1665, 395);
+            status2.Name = "status2";
+            status2.Size = new Size(130, 25);
+            status2.TabIndex = 10;
+            status2.Text = "at the moment";
+            status2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // hopeToggle1
+            // 
+            hopeToggle1.AutoSize = true;
+            hopeToggle1.BackColor = Color.FromArgb(65, 71, 95);
+            hopeToggle1.BaseColor = Color.FromArgb(65, 71, 95);
+            hopeToggle1.BaseColorA = Color.FromArgb(220, 223, 230);
+            hopeToggle1.BaseColorB = Color.Goldenrod;
+            hopeToggle1.HeadColorA = Color.FromArgb(220, 223, 230);
+            hopeToggle1.HeadColorB = Color.White;
+            hopeToggle1.HeadColorC = Color.White;
+            hopeToggle1.HeadColorD = Color.White;
+            hopeToggle1.Location = new Point(1808, 327);
+            hopeToggle1.Name = "hopeToggle1";
+            hopeToggle1.Size = new Size(48, 20);
+            hopeToggle1.TabIndex = 11;
+            hopeToggle1.Text = "hopeToggle1";
+            hopeToggle1.UseVisualStyleBackColor = false;
+            hopeToggle1.CheckedChanged += hopeToggle1_CheckedChanged;
+            // 
             // TMCanopyInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 69);
-            BackgroundImage = Properties.Resources.Group_2092;
+            BackgroundImage = Properties.Resources.Group_364;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(hopeToggle1);
+            Controls.Add(status1);
+            Controls.Add(bigLabel1);
             Controls.Add(nightControlBox1);
             Controls.Add(MainPanel);
+            Controls.Add(status2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TMCanopyInstallation";
             StartPosition = FormStartPosition.CenterScreen;
@@ -388,6 +453,7 @@
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -410,5 +476,9 @@
         private Button SubTent2;
         private Button SubTent1;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private Label status1;
+        private Label status2;
+        private ReaLTaiizor.Controls.HopeToggle hopeToggle1;
     }
 }

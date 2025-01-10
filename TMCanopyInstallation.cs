@@ -135,5 +135,19 @@ namespace SmartTent
         {
 
         }
+
+        private void hopeToggle1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (hopeToggle1.CheckState == CheckState.Unchecked)
+            {
+                status1.Text = "Deployment of canopies suggested  ";
+                this.BackgroundImage = Properties.Resources.Group_364;
+
+            }
+            else {
+                status1.Text = "Retraction of canopies not suggested";
+                this.BackgroundImage = Properties.Resources.Group_2093;
+            }
+        }
     }
 }

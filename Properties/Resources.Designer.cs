@@ -283,6 +283,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_2093 {
+            get {
+                object obj = ResourceManager.GetObject("Group 2093", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_219 {
             get {
                 object obj = ResourceManager.GetObject("Group 219", resourceCulture);
@@ -346,6 +356,16 @@ namespace SmartTent.Properties {
         internal static System.Drawing.Bitmap Group_3551 {
             get {
                 object obj = ResourceManager.GetObject("Group 3551", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_364 {
+            get {
+                object obj = ResourceManager.GetObject("Group 364", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
