@@ -77,9 +77,17 @@ namespace SmartTent
             this.Hide();
         }
 
+        private void SubTent5_Click(object sender, EventArgs e)
+        {
+            TMEnergy energy = new TMEnergy();
+            energy.Show();
+            this.Hide();
+        }
+
         private void MainExploreNearby_Click(object sender, EventArgs e)
         {
-
+            UIHelper.TogglePanelVisibility(SubPanelExplore, SubPanelTent, SubPanelEmergency);
+            placeButtons();
         }
         private void placeButtons()
         {
@@ -130,6 +138,39 @@ namespace SmartTent
             toggle_waterfall = !toggle_waterfall;
             waterfall_window.Visible = toggle_waterfall;
             send_waterfall.Visible = toggle_waterfall;
+        }
+
+        private void MainTentManagement_Click(object sender, EventArgs e)
+        {
+            UIHelper.TogglePanelVisibility(SubPanelTent, SubPanelExplore, SubPanelEmergency);
+            placeButtons();
+        }
+
+        private void MainEmergencyNav_Click(object sender, EventArgs e)
+        {
+            UIHelper.TogglePanelVisibility(SubPanelEmergency, SubPanelExplore, SubPanelTent);
+            placeButtons();
+        }
+
+        private void SubExplore2_Click(object sender, EventArgs e)
+        {
+            EXServices services = new EXServices();
+            services.Show();
+            this.Hide();
+        }
+
+        private void SubExplore3_Click(object sender, EventArgs e)
+        {
+            EXWeather weather = new EXWeather();
+            weather.Show();
+            this.Hide();
+        }
+
+        private void SubEmergNav1_Click(object sender, EventArgs e)
+        {
+            ENShelters shelters = new ENShelters();
+            shelters.Show();
+            this.Hide();
         }
     }
 }

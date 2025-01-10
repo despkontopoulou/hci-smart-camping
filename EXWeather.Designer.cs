@@ -36,8 +36,8 @@
             SubEmergNav1 = new Button();
             MainEmergencyNav = new Button();
             SubPanelExplore = new Panel();
-            SubExplore4 = new Button();
             SubExplore3 = new Button();
+            SubExplore2 = new Button();
             SubExplore1 = new Button();
             SubPanelTent = new Panel();
             SubTent5 = new Button();
@@ -45,10 +45,16 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -106,6 +112,7 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
+            MainExploreNearby.Click += MainExploreNearby_Click;
             // 
             // MainTentManagement
             // 
@@ -124,6 +131,7 @@
             MainTentManagement.Text = "Tent Management";
             MainTentManagement.TextAlign = ContentAlignment.MiddleLeft;
             MainTentManagement.UseVisualStyleBackColor = true;
+            MainTentManagement.Click += MainTentManagement_Click;
             // 
             // SubPanelEmergency
             // 
@@ -153,6 +161,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -171,12 +180,13 @@
             MainEmergencyNav.Text = "Emergency Navigation";
             MainEmergencyNav.TextAlign = ContentAlignment.MiddleLeft;
             MainEmergencyNav.UseVisualStyleBackColor = true;
+            MainEmergencyNav.Click += MainEmergencyNav_Click;
             // 
             // SubPanelExplore
             // 
             SubPanelExplore.BackColor = Color.FromArgb(65, 71, 95);
-            SubPanelExplore.Controls.Add(SubExplore4);
             SubPanelExplore.Controls.Add(SubExplore3);
+            SubPanelExplore.Controls.Add(SubExplore2);
             SubPanelExplore.Controls.Add(SubExplore1);
             SubPanelExplore.Location = new Point(0, 280);
             SubPanelExplore.Margin = new Padding(2);
@@ -185,24 +195,6 @@
             SubPanelExplore.TabIndex = 7;
             SubPanelExplore.Visible = false;
             // 
-            // SubExplore4
-            // 
-            SubExplore4.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            SubExplore4.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            SubExplore4.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
-            SubExplore4.FlatStyle = FlatStyle.Flat;
-            SubExplore4.Font = new Font("Segoe UI", 14F);
-            SubExplore4.ForeColor = Color.FromArgb(219, 166, 30);
-            SubExplore4.Location = new Point(0, 76);
-            SubExplore4.Margin = new Padding(2);
-            SubExplore4.Name = "SubExplore4";
-            SubExplore4.Padding = new Padding(14, 0, 0, 0);
-            SubExplore4.Size = new Size(316, 40);
-            SubExplore4.TabIndex = 9;
-            SubExplore4.Text = "Weather";
-            SubExplore4.TextAlign = ContentAlignment.TopLeft;
-            SubExplore4.UseVisualStyleBackColor = true;
-            // 
             // SubExplore3
             // 
             SubExplore3.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
@@ -210,16 +202,36 @@
             SubExplore3.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
             SubExplore3.FlatStyle = FlatStyle.Flat;
             SubExplore3.Font = new Font("Segoe UI", 14F);
-            SubExplore3.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore3.Location = new Point(0, 36);
+            SubExplore3.ForeColor = Color.FromArgb(219, 166, 30);
+            SubExplore3.Location = new Point(0, 76);
             SubExplore3.Margin = new Padding(2);
             SubExplore3.Name = "SubExplore3";
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
             SubExplore3.Size = new Size(316, 40);
-            SubExplore3.TabIndex = 8;
-            SubExplore3.Text = "Services";
+            SubExplore3.TabIndex = 9;
+            SubExplore3.Text = "Weather";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
+            SubExplore3.Click += SubExplore3_Click;
+            // 
+            // SubExplore2
+            // 
+            SubExplore2.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
+            SubExplore2.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
+            SubExplore2.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
+            SubExplore2.FlatStyle = FlatStyle.Flat;
+            SubExplore2.Font = new Font("Segoe UI", 14F);
+            SubExplore2.ForeColor = Color.FromArgb(254, 254, 247);
+            SubExplore2.Location = new Point(0, 36);
+            SubExplore2.Margin = new Padding(2);
+            SubExplore2.Name = "SubExplore2";
+            SubExplore2.Padding = new Padding(14, 0, 0, 0);
+            SubExplore2.Size = new Size(316, 40);
+            SubExplore2.TabIndex = 8;
+            SubExplore2.Text = "Services";
+            SubExplore2.TextAlign = ContentAlignment.TopLeft;
+            SubExplore2.UseVisualStyleBackColor = true;
+            SubExplore2.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -347,6 +359,35 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Location = new Point(1554, 814);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(209, 38);
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += SubTent3_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.FromArgb(65, 71, 95);
+            pictureBox2.Location = new Point(1525, 868);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(253, 62);
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Location = new Point(1554, 947);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(209, 38);
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += SubEmergNav1_Click;
+            // 
             // EXWeather
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -354,15 +395,22 @@
             BackColor = Color.FromArgb(65, 71, 95);
             BackgroundImage = Properties.Resources.Group_354;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EXWeather";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EXWeather";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -376,8 +424,8 @@
         private Button SubEmergNav1;
         private Button MainEmergencyNav;
         private Panel SubPanelExplore;
-        private Button SubExplore4;
         private Button SubExplore3;
+        private Button SubExplore2;
         private Button SubExplore1;
         private Panel SubPanelTent;
         private Button SubTent5;
@@ -385,5 +433,8 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

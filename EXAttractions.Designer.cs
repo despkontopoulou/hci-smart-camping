@@ -36,8 +36,8 @@
             SubEmergNav1 = new Button();
             MainEmergencyNav = new Button();
             SubPanelExplore = new Panel();
-            SubExplore4 = new Button();
             SubExplore3 = new Button();
+            SubExplore2 = new Button();
             SubExplore1 = new Button();
             SubPanelTent = new Panel();
             SubTent5 = new Button();
@@ -140,6 +140,7 @@
             MainTentManagement.Text = "Tent Management";
             MainTentManagement.TextAlign = ContentAlignment.MiddleLeft;
             MainTentManagement.UseVisualStyleBackColor = true;
+            MainTentManagement.Click += MainTentManagement_Click;
             // 
             // SubPanelEmergency
             // 
@@ -169,6 +170,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -187,12 +189,13 @@
             MainEmergencyNav.Text = "Emergency Navigation";
             MainEmergencyNav.TextAlign = ContentAlignment.MiddleLeft;
             MainEmergencyNav.UseVisualStyleBackColor = true;
+            MainEmergencyNav.Click += MainEmergencyNav_Click;
             // 
             // SubPanelExplore
             // 
             SubPanelExplore.BackColor = Color.FromArgb(65, 71, 95);
-            SubPanelExplore.Controls.Add(SubExplore4);
             SubPanelExplore.Controls.Add(SubExplore3);
+            SubPanelExplore.Controls.Add(SubExplore2);
             SubPanelExplore.Controls.Add(SubExplore1);
             SubPanelExplore.Location = new Point(0, 280);
             SubPanelExplore.Margin = new Padding(2);
@@ -200,24 +203,6 @@
             SubPanelExplore.Size = new Size(316, 120);
             SubPanelExplore.TabIndex = 7;
             SubPanelExplore.Visible = false;
-            // 
-            // SubExplore4
-            // 
-            SubExplore4.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            SubExplore4.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            SubExplore4.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
-            SubExplore4.FlatStyle = FlatStyle.Flat;
-            SubExplore4.Font = new Font("Segoe UI", 14F);
-            SubExplore4.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore4.Location = new Point(0, 76);
-            SubExplore4.Margin = new Padding(2);
-            SubExplore4.Name = "SubExplore4";
-            SubExplore4.Padding = new Padding(14, 0, 0, 0);
-            SubExplore4.Size = new Size(316, 40);
-            SubExplore4.TabIndex = 9;
-            SubExplore4.Text = "Weather";
-            SubExplore4.TextAlign = ContentAlignment.TopLeft;
-            SubExplore4.UseVisualStyleBackColor = true;
             // 
             // SubExplore3
             // 
@@ -227,15 +212,35 @@
             SubExplore3.FlatStyle = FlatStyle.Flat;
             SubExplore3.Font = new Font("Segoe UI", 14F);
             SubExplore3.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore3.Location = new Point(0, 36);
+            SubExplore3.Location = new Point(0, 76);
             SubExplore3.Margin = new Padding(2);
             SubExplore3.Name = "SubExplore3";
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
             SubExplore3.Size = new Size(316, 40);
-            SubExplore3.TabIndex = 8;
-            SubExplore3.Text = "Services";
+            SubExplore3.TabIndex = 9;
+            SubExplore3.Text = "Weather";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
+            SubExplore3.Click += SubExplore3_Click;
+            // 
+            // SubExplore2
+            // 
+            SubExplore2.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
+            SubExplore2.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
+            SubExplore2.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
+            SubExplore2.FlatStyle = FlatStyle.Flat;
+            SubExplore2.Font = new Font("Segoe UI", 14F);
+            SubExplore2.ForeColor = Color.FromArgb(254, 254, 247);
+            SubExplore2.Location = new Point(0, 36);
+            SubExplore2.Margin = new Padding(2);
+            SubExplore2.Name = "SubExplore2";
+            SubExplore2.Padding = new Padding(14, 0, 0, 0);
+            SubExplore2.Size = new Size(316, 40);
+            SubExplore2.TabIndex = 8;
+            SubExplore2.Text = "Services";
+            SubExplore2.TextAlign = ContentAlignment.TopLeft;
+            SubExplore2.UseVisualStyleBackColor = true;
+            SubExplore2.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -287,6 +292,7 @@
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
             SubTent5.UseVisualStyleBackColor = true;
+            SubTent5.Click += SubTent5_Click;
             // 
             // SubTent4
             // 
@@ -522,8 +528,8 @@
         private Button SubEmergNav1;
         private Button MainEmergencyNav;
         private Panel SubPanelExplore;
-        private Button SubExplore4;
         private Button SubExplore3;
+        private Button SubExplore2;
         private Button SubExplore1;
         private Panel SubPanelTent;
         private Button SubTent5;

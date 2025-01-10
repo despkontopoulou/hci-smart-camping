@@ -16,6 +16,15 @@ namespace SmartTent
         public EXWeather()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
+            SubPanelTent.Visible = false;
+            SubPanelExplore.Visible = true;
+            SubPanelEmergency.Visible = false;
+            MainExploreNearby.Location = new Point(0, 38);
+            SubPanelTent.Visible = false;
+            SubPanelExplore.Location = new Point(0, 76);
+            MainEmergencyNav.Location = new Point(0, 196);
+            SubPanelEmergency.Visible = false;
         }
 
         private void SubTent1_Click(object sender, EventArgs e)
@@ -69,6 +78,68 @@ namespace SmartTent
             EXAttractions attractions = new EXAttractions();
             attractions.Show();
             this.Hide();
+        }
+
+        private void SubExplore2_Click(object sender, EventArgs e)
+        {
+            EXServices services = new EXServices();
+            services.Show();
+            this.Hide();
+        }
+
+        private void SubEmergNav1_Click(object sender, EventArgs e)
+        {
+            ENShelters shelters = new ENShelters();
+            shelters.Show();
+            this.Hide();
+        }
+        private void placeButtons()
+        {
+            if (SubPanelTent.Visible)
+            {
+                MainExploreNearby.Location = new Point(0, 240);
+                MainEmergencyNav.Location = new Point(0, 280);
+
+            }
+            if (!SubPanelTent.Visible)
+            {
+                MainExploreNearby.Location = new Point(0, 38);
+                MainEmergencyNav.Location = new Point(0, 76);
+
+            }
+
+            if (SubPanelExplore.Visible)
+            {
+                MainExploreNearby.Location = new Point(0, 38);
+                SubPanelExplore.Location = new Point(0, 76);
+                MainEmergencyNav.Location = new Point(0, 196);
+            }
+            if (SubPanelEmergency.Visible)
+            {
+                SubPanelEmergency.Location = new Point(0, 114);
+            }
+        }
+        private void MainExploreNearby_Click(object sender, EventArgs e)
+        {
+            UIHelper.TogglePanelVisibility(SubPanelExplore, SubPanelTent, SubPanelEmergency);
+            placeButtons();
+        }
+
+        private void MainTentManagement_Click(object sender, EventArgs e)
+        {
+            UIHelper.TogglePanelVisibility(SubPanelTent, SubPanelExplore, SubPanelEmergency);
+            placeButtons();
+        }
+
+        private void MainEmergencyNav_Click(object sender, EventArgs e)
+        {
+            UIHelper.TogglePanelVisibility(SubPanelEmergency, SubPanelExplore, SubPanelTent);
+            placeButtons();
+        }
+
+        private void SubExplore3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

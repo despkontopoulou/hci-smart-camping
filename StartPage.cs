@@ -43,11 +43,16 @@ namespace SmartTent
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            EXAttractions attractions= new EXAttractions();
+            attractions.Show();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            ENShelters shelters= new ENShelters();
+            shelters.Show();
+            this.Hide();
 
         }
 

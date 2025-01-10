@@ -353,9 +353,59 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_270 {
+            get {
+                object obj = ResourceManager.GetObject("Group 270", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_275 {
+            get {
+                object obj = ResourceManager.GetObject("Group 275", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_276 {
+            get {
+                object obj = ResourceManager.GetObject("Group 276", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_277 {
+            get {
+                object obj = ResourceManager.GetObject("Group 277", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_341 {
             get {
                 object obj = ResourceManager.GetObject("Group 341", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_3411 {
+            get {
+                object obj = ResourceManager.GetObject("Group 3411", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +463,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_3552 {
+            get {
+                object obj = ResourceManager.GetObject("Group 3552", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_364 {
             get {
                 object obj = ResourceManager.GetObject("Group 364", resourceCulture);
@@ -456,6 +516,16 @@ namespace SmartTent.Properties {
         internal static System.Drawing.Bitmap menu1 {
             get {
                 object obj = ResourceManager.GetObject("menu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ordered {
+            get {
+                object obj = ResourceManager.GetObject("ordered", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

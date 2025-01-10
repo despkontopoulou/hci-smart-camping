@@ -36,8 +36,8 @@
             SubEmergNav1 = new Button();
             MainEmergencyNav = new Button();
             SubPanelExplore = new Panel();
-            SubExplore4 = new Button();
             SubExplore3 = new Button();
+            SubExplore2 = new Button();
             SubExplore1 = new Button();
             SubPanelTent = new Panel();
             SubTent5 = new Button();
@@ -45,10 +45,30 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            shelter3 = new PictureBox();
+            shelter2 = new PictureBox();
+            shelter1 = new PictureBox();
+            shelter4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            shelbtn1 = new Button();
+            shelbtn2 = new Button();
+            shelbtn3 = new Button();
+            shelbtn4 = new Button();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)shelter3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)shelter2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)shelter1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)shelter4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -106,6 +126,7 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
+            MainExploreNearby.Click += MainExploreNearby_Click;
             // 
             // MainTentManagement
             // 
@@ -124,6 +145,7 @@
             MainTentManagement.Text = "Tent Management";
             MainTentManagement.TextAlign = ContentAlignment.MiddleLeft;
             MainTentManagement.UseVisualStyleBackColor = true;
+            MainTentManagement.Click += MainTentManagement_Click;
             // 
             // SubPanelEmergency
             // 
@@ -153,6 +175,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -171,12 +194,13 @@
             MainEmergencyNav.Text = "Emergency Navigation";
             MainEmergencyNav.TextAlign = ContentAlignment.MiddleLeft;
             MainEmergencyNav.UseVisualStyleBackColor = true;
+            MainEmergencyNav.Click += MainEmergencyNav_Click;
             // 
             // SubPanelExplore
             // 
             SubPanelExplore.BackColor = Color.FromArgb(65, 71, 95);
-            SubPanelExplore.Controls.Add(SubExplore4);
             SubPanelExplore.Controls.Add(SubExplore3);
+            SubPanelExplore.Controls.Add(SubExplore2);
             SubPanelExplore.Controls.Add(SubExplore1);
             SubPanelExplore.Location = new Point(0, 280);
             SubPanelExplore.Margin = new Padding(2);
@@ -184,24 +208,6 @@
             SubPanelExplore.Size = new Size(316, 120);
             SubPanelExplore.TabIndex = 7;
             SubPanelExplore.Visible = false;
-            // 
-            // SubExplore4
-            // 
-            SubExplore4.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
-            SubExplore4.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
-            SubExplore4.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
-            SubExplore4.FlatStyle = FlatStyle.Flat;
-            SubExplore4.Font = new Font("Segoe UI", 14F);
-            SubExplore4.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore4.Location = new Point(0, 76);
-            SubExplore4.Margin = new Padding(2);
-            SubExplore4.Name = "SubExplore4";
-            SubExplore4.Padding = new Padding(14, 0, 0, 0);
-            SubExplore4.Size = new Size(316, 40);
-            SubExplore4.TabIndex = 9;
-            SubExplore4.Text = "Weather";
-            SubExplore4.TextAlign = ContentAlignment.TopLeft;
-            SubExplore4.UseVisualStyleBackColor = true;
             // 
             // SubExplore3
             // 
@@ -211,15 +217,35 @@
             SubExplore3.FlatStyle = FlatStyle.Flat;
             SubExplore3.Font = new Font("Segoe UI", 14F);
             SubExplore3.ForeColor = Color.FromArgb(254, 254, 247);
-            SubExplore3.Location = new Point(0, 36);
+            SubExplore3.Location = new Point(0, 76);
             SubExplore3.Margin = new Padding(2);
             SubExplore3.Name = "SubExplore3";
             SubExplore3.Padding = new Padding(14, 0, 0, 0);
             SubExplore3.Size = new Size(316, 40);
-            SubExplore3.TabIndex = 8;
-            SubExplore3.Text = "Services";
+            SubExplore3.TabIndex = 9;
+            SubExplore3.Text = "Weather";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
+            SubExplore3.Click += SubExplore3_Click;
+            // 
+            // SubExplore2
+            // 
+            SubExplore2.FlatAppearance.BorderColor = Color.FromArgb(65, 71, 95);
+            SubExplore2.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 39, 53);
+            SubExplore2.FlatAppearance.MouseOverBackColor = Color.FromArgb(65, 71, 95);
+            SubExplore2.FlatStyle = FlatStyle.Flat;
+            SubExplore2.Font = new Font("Segoe UI", 14F);
+            SubExplore2.ForeColor = Color.FromArgb(254, 254, 247);
+            SubExplore2.Location = new Point(0, 36);
+            SubExplore2.Margin = new Padding(2);
+            SubExplore2.Name = "SubExplore2";
+            SubExplore2.Padding = new Padding(14, 0, 0, 0);
+            SubExplore2.Size = new Size(316, 40);
+            SubExplore2.TabIndex = 8;
+            SubExplore2.Text = "Services";
+            SubExplore2.TextAlign = ContentAlignment.TopLeft;
+            SubExplore2.UseVisualStyleBackColor = true;
+            SubExplore2.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -347,13 +373,180 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // shelter3
+            // 
+            shelter3.BackColor = Color.Transparent;
+            shelter3.BackgroundImage = Properties.Resources.Group_277;
+            shelter3.BackgroundImageLayout = ImageLayout.None;
+            shelter3.Location = new Point(889, 482);
+            shelter3.Name = "shelter3";
+            shelter3.Size = new Size(186, 211);
+            shelter3.TabIndex = 11;
+            shelter3.TabStop = false;
+            shelter3.Visible = false;
+            // 
+            // shelter2
+            // 
+            shelter2.BackColor = Color.Transparent;
+            shelter2.BackgroundImage = Properties.Resources.Group_277;
+            shelter2.BackgroundImageLayout = ImageLayout.None;
+            shelter2.Image = Properties.Resources.Group_276;
+            shelter2.Location = new Point(723, 171);
+            shelter2.Name = "shelter2";
+            shelter2.Size = new Size(186, 211);
+            shelter2.TabIndex = 12;
+            shelter2.TabStop = false;
+            shelter2.Visible = false;
+            // 
+            // shelter1
+            // 
+            shelter1.BackColor = Color.Transparent;
+            shelter1.BackgroundImage = Properties.Resources.Group_277;
+            shelter1.BackgroundImageLayout = ImageLayout.None;
+            shelter1.Image = Properties.Resources.Group_275;
+            shelter1.Location = new Point(1251, 51);
+            shelter1.Name = "shelter1";
+            shelter1.Size = new Size(186, 211);
+            shelter1.TabIndex = 13;
+            shelter1.TabStop = false;
+            shelter1.Visible = false;
+            // 
+            // shelter4
+            // 
+            shelter4.BackColor = Color.Transparent;
+            shelter4.BackgroundImage = Properties.Resources.Group_277;
+            shelter4.BackgroundImageLayout = ImageLayout.None;
+            shelter4.Image = Properties.Resources.Group_270;
+            shelter4.Location = new Point(1174, 706);
+            shelter4.Name = "shelter4";
+            shelter4.Size = new Size(186, 211);
+            shelter4.TabIndex = 14;
+            shelter4.TabStop = false;
+            shelter4.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.Location = new Point(1174, 182);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(74, 80);
+            pictureBox5.TabIndex = 15;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.Location = new Point(643, 302);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(74, 80);
+            pictureBox6.TabIndex = 16;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.Location = new Point(814, 613);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(74, 80);
+            pictureBox7.TabIndex = 17;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.Location = new Point(1357, 837);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(74, 80);
+            pictureBox8.TabIndex = 18;
+            pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
+            // 
+            // shelbtn1
+            // 
+            shelbtn1.BackColor = Color.FromArgb(195, 241, 213);
+            shelbtn1.FlatAppearance.BorderSize = 0;
+            shelbtn1.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            shelbtn1.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            shelbtn1.FlatStyle = FlatStyle.Flat;
+            shelbtn1.ForeColor = Color.DarkGreen;
+            shelbtn1.Location = new Point(1259, 214);
+            shelbtn1.Name = "shelbtn1";
+            shelbtn1.Size = new Size(151, 31);
+            shelbtn1.TabIndex = 19;
+            shelbtn1.Text = "Send route to mobile";
+            shelbtn1.UseVisualStyleBackColor = false;
+            shelbtn1.Visible = false;
+            // 
+            // shelbtn2
+            // 
+            shelbtn2.BackColor = Color.FromArgb(195, 241, 213);
+            shelbtn2.FlatAppearance.BorderSize = 0;
+            shelbtn2.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            shelbtn2.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            shelbtn2.FlatStyle = FlatStyle.Flat;
+            shelbtn2.ForeColor = Color.DarkGreen;
+            shelbtn2.Location = new Point(737, 332);
+            shelbtn2.Name = "shelbtn2";
+            shelbtn2.Size = new Size(151, 31);
+            shelbtn2.TabIndex = 20;
+            shelbtn2.Text = "Send route to mobile";
+            shelbtn2.UseVisualStyleBackColor = false;
+            shelbtn2.Visible = false;
+            // 
+            // shelbtn3
+            // 
+            shelbtn3.BackColor = Color.FromArgb(195, 241, 213);
+            shelbtn3.FlatAppearance.BorderSize = 0;
+            shelbtn3.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            shelbtn3.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            shelbtn3.FlatStyle = FlatStyle.Flat;
+            shelbtn3.ForeColor = Color.DarkGreen;
+            shelbtn3.Location = new Point(904, 645);
+            shelbtn3.Name = "shelbtn3";
+            shelbtn3.Size = new Size(151, 31);
+            shelbtn3.TabIndex = 21;
+            shelbtn3.Text = "Send route to mobile";
+            shelbtn3.UseVisualStyleBackColor = false;
+            shelbtn3.Visible = false;
+            // 
+            // shelbtn4
+            // 
+            shelbtn4.BackColor = Color.FromArgb(195, 241, 213);
+            shelbtn4.FlatAppearance.BorderSize = 0;
+            shelbtn4.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            shelbtn4.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            shelbtn4.FlatStyle = FlatStyle.Flat;
+            shelbtn4.ForeColor = Color.DarkGreen;
+            shelbtn4.Location = new Point(1188, 870);
+            shelbtn4.Name = "shelbtn4";
+            shelbtn4.Size = new Size(151, 31);
+            shelbtn4.TabIndex = 22;
+            shelbtn4.Text = "Send route to mobile";
+            shelbtn4.UseVisualStyleBackColor = false;
+            shelbtn4.Visible = false;
+            // 
             // ENShelters
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 71, 95);
-            BackgroundImage = Properties.Resources.Group_3551;
+            BackgroundImage = Properties.Resources.Group_3552;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(shelbtn4);
+            Controls.Add(shelbtn3);
+            Controls.Add(shelbtn2);
+            Controls.Add(shelbtn1);
+            Controls.Add(pictureBox8);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox5);
+            Controls.Add(shelter4);
+            Controls.Add(shelter1);
+            Controls.Add(shelter2);
+            Controls.Add(shelter3);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox1);
             FormBorderStyle = FormBorderStyle.None;
@@ -364,6 +557,14 @@
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)shelter3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)shelter2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)shelter1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)shelter4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
         }
 
@@ -377,8 +578,8 @@
         private Button SubEmergNav1;
         private Button MainEmergencyNav;
         private Panel SubPanelExplore;
-        private Button SubExplore4;
         private Button SubExplore3;
+        private Button SubExplore2;
         private Button SubExplore1;
         private Panel SubPanelTent;
         private Button SubTent5;
@@ -386,5 +587,17 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private PictureBox shelter3;
+        private PictureBox shelter2;
+        private PictureBox shelter1;
+        private PictureBox shelter4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
+        private Button shelbtn1;
+        private Button shelbtn2;
+        private Button shelbtn3;
+        private Button shelbtn4;
     }
 }

@@ -45,6 +45,20 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            panel1 = new Panel();
+            plus = new Button();
+            minus = new Button();
+            quantity = new TextBox();
+            total = new TextBox();
+            message_box = new TextBox();
+            hopeNotify1 = new ReaLTaiizor.Controls.HopeNotify();
+            button6 = new Button();
+            button7 = new Button();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -106,6 +120,7 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
+            MainExploreNearby.Click += MainExploreNearby_Click;
             // 
             // MainTentManagement
             // 
@@ -124,6 +139,7 @@
             MainTentManagement.Text = "Tent Management";
             MainTentManagement.TextAlign = ContentAlignment.MiddleLeft;
             MainTentManagement.UseVisualStyleBackColor = true;
+            MainTentManagement.Click += MainTentManagement_Click;
             // 
             // SubPanelEmergency
             // 
@@ -153,6 +169,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -171,6 +188,7 @@
             MainEmergencyNav.Text = "Emergency Navigation";
             MainEmergencyNav.TextAlign = ContentAlignment.MiddleLeft;
             MainEmergencyNav.UseVisualStyleBackColor = true;
+            MainEmergencyNav.Click += MainEmergencyNav_Click;
             // 
             // SubPanelExplore
             // 
@@ -202,6 +220,7 @@
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
             SubExplore4.UseVisualStyleBackColor = true;
+            SubExplore4.Click += SubExplore3_Click;
             // 
             // SubExplore3
             // 
@@ -271,6 +290,7 @@
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
             SubTent5.UseVisualStyleBackColor = true;
+            SubTent5.Click += SubTent5_Click;
             // 
             // SubTent4
             // 
@@ -347,23 +367,245 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(215, 200, 184);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonFace;
+            button1.Location = new Point(1007, 351);
+            button1.Name = "button1";
+            button1.Size = new Size(156, 44);
+            button1.TabIndex = 11;
+            button1.Text = "Place Order";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(111, 118, 147);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 98, 141);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(55, 65, 87);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonFace;
+            button2.Location = new Point(1052, 276);
+            button2.Name = "button2";
+            button2.Size = new Size(101, 27);
+            button2.TabIndex = 12;
+            button2.Text = "Add to Bill";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(111, 118, 147);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 98, 141);
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(55, 65, 87);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ButtonFace;
+            button3.Location = new Point(1180, 276);
+            button3.Name = "button3";
+            button3.Size = new Size(101, 27);
+            button3.TabIndex = 13;
+            button3.Text = "Pay Now";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(111, 118, 147);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 98, 141);
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(55, 65, 87);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = SystemColors.ButtonFace;
+            button4.Location = new Point(1143, 309);
+            button4.Name = "button4";
+            button4.Size = new Size(173, 33);
+            button4.TabIndex = 14;
+            button4.Text = "Pick Delivery Time";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(111, 118, 147);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 98, 141);
+            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(55, 65, 87);
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = SystemColors.ButtonFace;
+            button5.Location = new Point(1715, 1017);
+            button5.Name = "button5";
+            button5.Size = new Size(163, 37);
+            button5.TabIndex = 15;
+            button5.Text = "Send Message";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.Location = new Point(996, 262);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(320, 133);
+            panel1.TabIndex = 16;
+            // 
+            // plus
+            // 
+            plus.BackColor = Color.FromArgb(249, 249, 255);
+            plus.FlatAppearance.BorderSize = 0;
+            plus.FlatStyle = FlatStyle.Flat;
+            plus.Font = new Font("Segoe UI", 20F);
+            plus.ForeColor = Color.FromArgb(111, 118, 147);
+            plus.ImageAlign = ContentAlignment.MiddleRight;
+            plus.Location = new Point(1283, 171);
+            plus.Name = "plus";
+            plus.Size = new Size(22, 48);
+            plus.TabIndex = 19;
+            plus.Text = "+";
+            plus.UseVisualStyleBackColor = false;
+            plus.Click += plus_Click;
+            // 
+            // minus
+            // 
+            minus.BackColor = Color.FromArgb(249, 249, 255);
+            minus.FlatAppearance.BorderSize = 0;
+            minus.FlatStyle = FlatStyle.Flat;
+            minus.Font = new Font("Segoe UI", 20F);
+            minus.ForeColor = Color.FromArgb(111, 118, 147);
+            minus.ImageAlign = ContentAlignment.MiddleRight;
+            minus.Location = new Point(1218, 171);
+            minus.Name = "minus";
+            minus.Size = new Size(22, 48);
+            minus.TabIndex = 18;
+            minus.Text = "-";
+            minus.UseVisualStyleBackColor = false;
+            minus.Click += minus_Click;
+            // 
+            // quantity
+            // 
+            quantity.BackColor = Color.FromArgb(249, 249, 255);
+            quantity.BorderStyle = BorderStyle.None;
+            quantity.Font = new Font("Segoe UI", 18F);
+            quantity.ForeColor = Color.FromArgb(111, 118, 147);
+            quantity.Location = new Point(1228, 181);
+            quantity.Name = "quantity";
+            quantity.ReadOnly = true;
+            quantity.Size = new Size(64, 32);
+            quantity.TabIndex = 17;
+            quantity.Text = "1";
+            quantity.TextAlign = HorizontalAlignment.Center;
+            // 
+            // total
+            // 
+            total.BackColor = Color.FromArgb(249, 249, 255);
+            total.BorderStyle = BorderStyle.None;
+            total.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            total.ForeColor = Color.FromArgb(111, 128, 104);
+            total.Location = new Point(946, 230);
+            total.Name = "total";
+            total.ReadOnly = true;
+            total.Size = new Size(41, 28);
+            total.TabIndex = 20;
+            total.Text = "3€";
+            total.TextAlign = HorizontalAlignment.Center;
+            // 
+            // message_box
+            // 
+            message_box.Location = new Point(1453, 946);
+            message_box.Name = "message_box";
+            message_box.Size = new Size(369, 23);
+            message_box.TabIndex = 21;
+            // 
+            // hopeNotify1
+            // 
+            hopeNotify1.Close = true;
+            hopeNotify1.CloseColor = Color.FromArgb(144, 148, 154);
+            hopeNotify1.ErrorBackColor = Color.FromArgb(25, 245, 108, 108);
+            hopeNotify1.ErrorTextColor = Color.FromArgb(245, 108, 108);
+            hopeNotify1.Font = new Font("Segoe UI", 12F);
+            hopeNotify1.InfoBackColor = Color.FromArgb(25, 144, 147, 153);
+            hopeNotify1.InfoTextColor = Color.FromArgb(144, 147, 153);
+            hopeNotify1.Location = new Point(1552, 796);
+            hopeNotify1.Name = "hopeNotify1";
+            hopeNotify1.Size = new Size(156, 34);
+            hopeNotify1.SuccessBackColor = Color.FromArgb(25, 103, 194, 58);
+            hopeNotify1.SuccessTextColor = Color.FromArgb(103, 194, 58);
+            hopeNotify1.TabIndex = 22;
+            hopeNotify1.Text = "Message Sent";
+            hopeNotify1.Type = ReaLTaiizor.Controls.HopeNotify.AlertType.Info;
+            hopeNotify1.Visible = false;
+            hopeNotify1.WarningBackColor = Color.FromArgb(25, 230, 162, 60);
+            hopeNotify1.WarningTextColor = Color.FromArgb(230, 162, 60);
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.RosyBrown;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 14.25F);
+            button6.ForeColor = SystemColors.ButtonFace;
+            button6.Location = new Point(1551, 493);
+            button6.Name = "button6";
+            button6.Size = new Size(156, 45);
+            button6.TabIndex = 23;
+            button6.Text = "Reserve";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            button7.BackColor = Color.RosyBrown;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Segoe UI", 14.25F);
+            button7.ForeColor = SystemColors.ButtonFace;
+            button7.Location = new Point(1551, 733);
+            button7.Name = "button7";
+            button7.Size = new Size(156, 45);
+            button7.TabIndex = 24;
+            button7.Text = "Reserve";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
+            // 
             // EXServices
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 71, 95);
-            BackgroundImage = Properties.Resources.Group_341;
+            BackgroundImage = Properties.Resources.Group_3411;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(hopeNotify1);
+            Controls.Add(message_box);
+            Controls.Add(total);
+            Controls.Add(plus);
+            Controls.Add(minus);
+            Controls.Add(quantity);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox1);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EXServices";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EXActivities";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -385,5 +627,19 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Panel panel1;
+        private Button plus;
+        private Button minus;
+        private TextBox quantity;
+        private TextBox total;
+        private TextBox message_box;
+        private ReaLTaiizor.Controls.HopeNotify hopeNotify1;
+        private Button button6;
+        private Button button7;
     }
 }
