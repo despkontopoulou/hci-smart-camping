@@ -46,7 +46,6 @@
             SubTent2 = new Button();
             SubTent1 = new Button();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             status1 = new Label();
             status2 = new Label();
             hopeToggle1 = new ReaLTaiizor.Controls.HopeToggle();
@@ -374,18 +373,6 @@
             nightControlBox1.Size = new Size(139, 31);
             nightControlBox1.TabIndex = 7;
             // 
-            // bigLabel1
-            // 
-            bigLabel1.AutoSize = true;
-            bigLabel1.BackColor = Color.Transparent;
-            bigLabel1.Font = new Font("Segoe UI", 25F);
-            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
-            bigLabel1.Location = new Point(0, 0);
-            bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(165, 46);
-            bigLabel1.TabIndex = 8;
-            bigLabel1.Text = "bigLabel1";
-            // 
             // status1
             // 
             status1.AutoSize = true;
@@ -440,7 +427,6 @@
             ClientSize = new Size(1920, 1080);
             Controls.Add(hopeToggle1);
             Controls.Add(status1);
-            Controls.Add(bigLabel1);
             Controls.Add(nightControlBox1);
             Controls.Add(MainPanel);
             Controls.Add(status2);
@@ -476,7 +462,6 @@
         private Button SubTent2;
         private Button SubTent1;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
-        private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private Label status1;
         private Label status2;
         private ReaLTaiizor.Controls.HopeToggle hopeToggle1;

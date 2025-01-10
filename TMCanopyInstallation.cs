@@ -13,7 +13,7 @@ namespace SmartTent
 {
     public partial class TMCanopyInstallation : Form
     {
-        public TMCanopyInstallation()
+        public TMCanopyInstallation( Boolean canopiesInstalled)
         {
             InitializeComponent();
             this.DoubleBuffered = true;
@@ -22,6 +22,12 @@ namespace SmartTent
             SubPanelEmergency.Visible = false;
             MainExploreNearby.Location = new Point(0, 240);
             MainEmergencyNav.Location = new Point(0, 280);
+            if (canopiesInstalled) {
+                hopeToggle1.Checked = true;
+                hopeToggle1.CheckState = CheckState.Checked;
+                status1.Text = "Retraction of canopies not suggested";
+                this.BackgroundImage = Properties.Resources.Group_2093;
+            }
         }
 
         private void MainExploreNearby_Click(object sender, EventArgs e)
@@ -142,11 +148,13 @@ namespace SmartTent
             {
                 status1.Text = "Deployment of canopies suggested  ";
                 this.BackgroundImage = Properties.Resources.Group_364;
+                SharedData.SelectedCanopies = false;
 
             }
             else {
                 status1.Text = "Retraction of canopies not suggested";
                 this.BackgroundImage = Properties.Resources.Group_2093;
+                SharedData.SelectedCanopies = true;
             }
         }
     }

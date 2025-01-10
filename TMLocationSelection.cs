@@ -150,7 +150,7 @@ namespace SmartTent
 
         private void SubTent3_Click(object sender, EventArgs e)
         {
-            TMCanopyInstallation canopyInstallation = new TMCanopyInstallation();
+            TMCanopyInstallation canopyInstallation = new TMCanopyInstallation(SharedData.SelectedCanopies);
             canopyInstallation.Show();
             this.Hide();
         }

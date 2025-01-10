@@ -49,5 +49,12 @@ namespace SmartTent
                 this.Hide();
             }
         }
+
+        private void SubTent3_Click(object sender, EventArgs e)
+        {
+            TMCanopyInstallation canopyInnstallation = new TMCanopyInstallation(SharedData.SelectedCanopies);
+            canopyInnstallation.Show();
+            this.Hide();
+        }
     }
 }

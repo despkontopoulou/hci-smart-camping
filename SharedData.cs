@@ -12,4 +12,6 @@ public static class SharedData
     public static string SelectedRotation {  get; set; }
     public static string SelectedPressure { get; set; }
 
+    public static Boolean SelectedCanopies {  get; set; }
+
 }

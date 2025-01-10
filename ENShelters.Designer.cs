@@ -305,6 +305,7 @@
             SubTent3.TabIndex = 3;
             SubTent3.Text = "Protective Canopy Installation";
             SubTent3.TextAlign = ContentAlignment.TopLeft;
+            SubTent3.Click += SubTent3_Click;
             // 
             // SubTent2
             // 
