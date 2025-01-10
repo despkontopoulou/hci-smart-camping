@@ -288,6 +288,7 @@
             SubTent4.Text = "Lighting Settings";
             SubTent4.TextAlign = ContentAlignment.TopLeft;
             SubTent4.UseVisualStyleBackColor = true;
+            SubTent4.Click += SubTent4_Click;
             // 
             // SubTent3
             // 

@@ -303,5 +303,32 @@ namespace SmartTent
                 hopeNotify1.Visible = true;
             }
         }
+
+        private void SubExplore1_Click(object sender, EventArgs e)
+        {
+            ENShelters shelters = new ENShelters();
+            shelters.Show();
+            this.Hide();
+        }
+        private void SubExplore2_Click(object sender, EventArgs e)
+        {
+            EXServices services = new EXServices();
+            services.Show();
+            this.Hide();
+        }
+        private void SubExplore3_Click(object sender, EventArgs e)
+        {
+            EXWeather weather = new EXWeather();
+            weather.Show();
+            this.Hide();
+
+        }
+        private void SubEmergNav1_Click(object sender, EventArgs e)
+        {
+            EXAttractions attractions = new EXAttractions();
+            attractions.Show();
+            this.Hide();
+
+        }
     }
 }

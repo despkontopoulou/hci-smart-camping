@@ -45,10 +45,25 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            trackBar1 = new TrackBar();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton3 = new RadioButton();
+            panel1 = new Panel();
+            radio3 = new RadioButton();
+            radio2 = new RadioButton();
+            radio1 = new RadioButton();
+            cyberColorPicker1 = new ReaLTaiizor.Controls.CyberColorPicker();
+            hopeToggle1 = new ReaLTaiizor.Controls.HopeToggle();
+            customLightingPanel = new Panel();
+            automaticLightingLabel = new Label();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            panel1.SuspendLayout();
+            customLightingPanel.SuspendLayout();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -155,6 +170,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -205,6 +221,7 @@
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
             SubExplore4.UseVisualStyleBackColor = true;
+            SubExplore4.Click += SubExplore3_Click;
             // 
             // SubExplore3
             // 
@@ -223,6 +240,7 @@
             SubExplore3.Text = "Services";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
+            SubExplore3.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -241,6 +259,7 @@
             SubExplore1.Text = "Local Attractions";
             SubExplore1.TextAlign = ContentAlignment.TopLeft;
             SubExplore1.UseVisualStyleBackColor = true;
+            SubExplore1.Click += SubExplore1_Click;
             // 
             // SubPanelTent
             // 
@@ -350,16 +369,160 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // trackBar1
+            // 
+            trackBar1.BackColor = Color.FromArgb(65, 71, 95);
+            trackBar1.Location = new Point(1559, 443);
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new Size(315, 45);
+            trackBar1.TabIndex = 10;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.BackColor = Color.Transparent;
+            radioButton1.Location = new Point(1624, 588);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(14, 13);
+            radioButton1.TabIndex = 11;
+            radioButton1.TabStop = true;
+            radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.BackColor = Color.Transparent;
+            radioButton2.Location = new Point(1714, 588);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(14, 13);
+            radioButton2.TabIndex = 12;
+            radioButton2.TabStop = true;
+            radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.BackColor = Color.Transparent;
+            radioButton3.Location = new Point(1794, 588);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(14, 13);
+            radioButton3.TabIndex = 13;
+            radioButton3.TabStop = true;
+            radioButton3.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(radio3);
+            panel1.Controls.Add(radio2);
+            panel1.Controls.Add(radio1);
+            panel1.Location = new Point(1550, 884);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(45, 102);
+            panel1.TabIndex = 17;
+            // 
+            // radio3
+            // 
+            radio3.AutoSize = true;
+            radio3.BackColor = Color.Transparent;
+            radio3.Location = new Point(15, 68);
+            radio3.Name = "radio3";
+            radio3.Size = new Size(14, 13);
+            radio3.TabIndex = 19;
+            radio3.TabStop = true;
+            radio3.UseVisualStyleBackColor = false;
+            // 
+            // radio2
+            // 
+            radio2.AutoSize = true;
+            radio2.BackColor = Color.Transparent;
+            radio2.Location = new Point(15, 45);
+            radio2.Name = "radio2";
+            radio2.Size = new Size(14, 13);
+            radio2.TabIndex = 18;
+            radio2.TabStop = true;
+            radio2.UseVisualStyleBackColor = false;
+            // 
+            // radio1
+            // 
+            radio1.AutoSize = true;
+            radio1.BackColor = Color.Transparent;
+            radio1.Location = new Point(15, 21);
+            radio1.Name = "radio1";
+            radio1.Size = new Size(14, 13);
+            radio1.TabIndex = 17;
+            radio1.TabStop = true;
+            radio1.UseVisualStyleBackColor = false;
+            // 
+            // cyberColorPicker1
+            // 
+            cyberColorPicker1.BackColor = Color.Transparent;
+            cyberColorPicker1.ForeColor = Color.WhiteSmoke;
+            cyberColorPicker1.Location = new Point(1634, 677);
+            cyberColorPicker1.Name = "cyberColorPicker1";
+            cyberColorPicker1.SelectedColor = Color.Empty;
+            cyberColorPicker1.Size = new Size(185, 210);
+            cyberColorPicker1.TabIndex = 18;
+            cyberColorPicker1.Tag = "Cyber";
+            // 
+            // hopeToggle1
+            // 
+            hopeToggle1.AutoSize = true;
+            hopeToggle1.BackColor = Color.FromArgb(65, 71, 95);
+            hopeToggle1.BaseColor = Color.FromArgb(65, 71, 95);
+            hopeToggle1.BaseColorA = Color.FromArgb(220, 223, 230);
+            hopeToggle1.BaseColorB = Color.Goldenrod;
+            hopeToggle1.HeadColorA = Color.FromArgb(220, 223, 230);
+            hopeToggle1.HeadColorB = Color.White;
+            hopeToggle1.HeadColorC = Color.White;
+            hopeToggle1.HeadColorD = Color.White;
+            hopeToggle1.Location = new Point(1823, 279);
+            hopeToggle1.Name = "hopeToggle1";
+            hopeToggle1.Size = new Size(48, 20);
+            hopeToggle1.TabIndex = 19;
+            hopeToggle1.Text = "hopeToggle1";
+            hopeToggle1.UseVisualStyleBackColor = false;
+            hopeToggle1.CheckStateChanged += checkAutomatic;
+            // 
+            // customLightingPanel
+            // 
+            customLightingPanel.BackColor = Color.FromArgb(65, 71, 95);
+            customLightingPanel.Controls.Add(automaticLightingLabel);
+            customLightingPanel.Location = new Point(1558, 397);
+            customLightingPanel.Name = "customLightingPanel";
+            customLightingPanel.Size = new Size(316, 586);
+            customLightingPanel.TabIndex = 20;
+            customLightingPanel.Visible = false;
+            // 
+            // automaticLightingLabel
+            // 
+            automaticLightingLabel.AutoSize = true;
+            automaticLightingLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            automaticLightingLabel.ForeColor = SystemColors.ButtonFace;
+            automaticLightingLabel.Location = new Point(0, 256);
+            automaticLightingLabel.Name = "automaticLightingLabel";
+            automaticLightingLabel.Size = new Size(309, 32);
+            automaticLightingLabel.TabIndex = 0;
+            automaticLightingLabel.Text = "Automatic Lighting Enabled";
+            // 
             // TMLightingSettings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(46, 51, 69);
-            BackgroundImage = Properties.Resources.Group_219;
+            BackgroundImage = Properties.Resources.Group_2193;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(customLightingPanel);
+            Controls.Add(hopeToggle1);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox1);
+            Controls.Add(cyberColorPicker1);
+            Controls.Add(panel1);
+            Controls.Add(radioButton3);
+            Controls.Add(radioButton2);
+            Controls.Add(radioButton1);
+            Controls.Add(trackBar1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TMLightingSettings";
             StartPosition = FormStartPosition.CenterScreen;
@@ -368,7 +531,13 @@
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            customLightingPanel.ResumeLayout(false);
+            customLightingPanel.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -390,5 +559,17 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private TrackBar trackBar1;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton3;
+        private Panel panel1;
+        private RadioButton radio3;
+        private RadioButton radio2;
+        private RadioButton radio1;
+        private ReaLTaiizor.Controls.CyberColorPicker cyberColorPicker1;
+        private ReaLTaiizor.Controls.HopeToggle hopeToggle1;
+        private Panel customLightingPanel;
+        private Label automaticLightingLabel;
     }
 }

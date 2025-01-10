@@ -144,6 +144,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -194,6 +195,7 @@
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
             SubExplore4.UseVisualStyleBackColor = true;
+            SubExplore4.Click += SubExplore3_Click;
             // 
             // SubExplore3
             // 
@@ -212,6 +214,7 @@
             SubExplore3.Text = "Services";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
+            SubExplore3.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -230,6 +233,7 @@
             SubExplore1.Text = "Local Attractions";
             SubExplore1.TextAlign = ContentAlignment.TopLeft;
             SubExplore1.UseVisualStyleBackColor = true;
+            SubExplore1.Click += SubExplore1_Click;
             // 
             // SubPanelTent
             // 

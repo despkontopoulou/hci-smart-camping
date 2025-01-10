@@ -45,6 +45,14 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            automaticSaving = new Button();
+            heating = new ReaLTaiizor.Controls.HopeToggle();
+            lighting = new ReaLTaiizor.Controls.HopeToggle();
+            stove = new ReaLTaiizor.Controls.HopeToggle();
+            music = new ReaLTaiizor.Controls.HopeToggle();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -155,6 +163,7 @@
             SubEmergNav1.Text = "Emergency Shelters";
             SubEmergNav1.TextAlign = ContentAlignment.TopLeft;
             SubEmergNav1.UseVisualStyleBackColor = true;
+            SubEmergNav1.Click += SubEmergNav1_Click;
             // 
             // MainEmergencyNav
             // 
@@ -205,6 +214,7 @@
             SubExplore4.Text = "Weather";
             SubExplore4.TextAlign = ContentAlignment.TopLeft;
             SubExplore4.UseVisualStyleBackColor = true;
+            SubExplore4.Click += SubExplore3_Click;
             // 
             // SubExplore3
             // 
@@ -223,6 +233,7 @@
             SubExplore3.Text = "Services";
             SubExplore3.TextAlign = ContentAlignment.TopLeft;
             SubExplore3.UseVisualStyleBackColor = true;
+            SubExplore3.Click += SubExplore2_Click;
             // 
             // SubExplore1
             // 
@@ -241,6 +252,7 @@
             SubExplore1.Text = "Local Attractions";
             SubExplore1.TextAlign = ContentAlignment.TopLeft;
             SubExplore1.UseVisualStyleBackColor = true;
+            SubExplore1.Click += SubExplore1_Click;
             // 
             // SubPanelTent
             // 
@@ -273,6 +285,7 @@
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
             SubTent5.UseVisualStyleBackColor = true;
+            SubTent5.Click += SubTent5_Click;
             // 
             // SubTent4
             // 
@@ -349,13 +362,152 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // automaticSaving
+            // 
+            automaticSaving.BackColor = Color.FromArgb(211, 236, 220);
+            automaticSaving.FlatAppearance.BorderSize = 0;
+            automaticSaving.FlatAppearance.MouseDownBackColor = Color.FromArgb(189, 224, 175);
+            automaticSaving.FlatAppearance.MouseOverBackColor = Color.FromArgb(147, 200, 140);
+            automaticSaving.FlatStyle = FlatStyle.Flat;
+            automaticSaving.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            automaticSaving.ForeColor = Color.DarkGreen;
+            automaticSaving.Location = new Point(1532, 202);
+            automaticSaving.Name = "automaticSaving";
+            automaticSaving.Size = new Size(330, 60);
+            automaticSaving.TabIndex = 13;
+            automaticSaving.Text = "Enable Automatic Energy Saving";
+            automaticSaving.UseVisualStyleBackColor = false;
+            automaticSaving.Click += automaticSaving_Click;
+            // 
+            // heating
+            // 
+            heating.AutoSize = true;
+            heating.BackColor = Color.FromArgb(65, 71, 95);
+            heating.BaseColor = Color.FromArgb(65, 71, 95);
+            heating.BaseColorA = Color.FromArgb(220, 223, 230);
+            heating.BaseColorB = Color.Goldenrod;
+            heating.Checked = true;
+            heating.CheckState = CheckState.Checked;
+            heating.HeadColorA = Color.FromArgb(220, 223, 230);
+            heating.HeadColorB = Color.White;
+            heating.HeadColorC = Color.White;
+            heating.HeadColorD = Color.White;
+            heating.Location = new Point(1753, 569);
+            heating.Name = "heating";
+            heating.Size = new Size(48, 20);
+            heating.TabIndex = 14;
+            heating.Text = "hopeToggle1";
+            heating.UseVisualStyleBackColor = false;
+            // 
+            // lighting
+            // 
+            lighting.AutoSize = true;
+            lighting.BackColor = Color.FromArgb(65, 71, 95);
+            lighting.BaseColor = Color.FromArgb(65, 71, 95);
+            lighting.BaseColorA = Color.FromArgb(220, 223, 230);
+            lighting.BaseColorB = Color.Goldenrod;
+            lighting.HeadColorA = Color.FromArgb(220, 223, 230);
+            lighting.HeadColorB = Color.White;
+            lighting.HeadColorC = Color.White;
+            lighting.HeadColorD = Color.White;
+            lighting.Location = new Point(1753, 618);
+            lighting.Name = "lighting";
+            lighting.Size = new Size(48, 20);
+            lighting.TabIndex = 15;
+            lighting.Text = "hopeToggle2";
+            lighting.UseVisualStyleBackColor = false;
+            // 
+            // stove
+            // 
+            stove.AutoSize = true;
+            stove.BackColor = Color.FromArgb(65, 71, 95);
+            stove.BaseColor = Color.FromArgb(65, 71, 95);
+            stove.BaseColorA = Color.FromArgb(220, 223, 230);
+            stove.BaseColorB = Color.Goldenrod;
+            stove.Checked = true;
+            stove.CheckState = CheckState.Checked;
+            stove.HeadColorA = Color.FromArgb(220, 223, 230);
+            stove.HeadColorB = Color.White;
+            stove.HeadColorC = Color.White;
+            stove.HeadColorD = Color.White;
+            stove.Location = new Point(1728, 663);
+            stove.Name = "stove";
+            stove.Size = new Size(48, 20);
+            stove.TabIndex = 16;
+            stove.Text = "hopeToggle3";
+            stove.UseVisualStyleBackColor = false;
+            // 
+            // music
+            // 
+            music.AutoSize = true;
+            music.BackColor = Color.FromArgb(65, 71, 95);
+            music.BaseColor = Color.FromArgb(65, 71, 95);
+            music.BaseColorA = Color.FromArgb(220, 223, 230);
+            music.BaseColorB = Color.Goldenrod;
+            music.Checked = true;
+            music.CheckState = CheckState.Checked;
+            music.HeadColorA = Color.FromArgb(220, 223, 230);
+            music.HeadColorB = Color.White;
+            music.HeadColorC = Color.White;
+            music.HeadColorD = Color.White;
+            music.Location = new Point(1728, 709);
+            music.Name = "music";
+            music.Size = new Size(48, 20);
+            music.TabIndex = 17;
+            music.Text = "hopeToggle4";
+            music.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Orange;
+            label1.Location = new Point(1738, 364);
+            label1.Name = "label1";
+            label1.Size = new Size(48, 25);
+            label1.TabIndex = 18;
+            label1.Text = "80%";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Orange;
+            label2.Location = new Point(1745, 401);
+            label2.Name = "label2";
+            label2.Size = new Size(58, 25);
+            label2.TabIndex = 19;
+            label2.Text = "100%";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Orange;
+            label3.Location = new Point(1787, 438);
+            label3.Name = "label3";
+            label3.Size = new Size(112, 25);
+            label3.TabIndex = 20;
+            label3.Text = "5kWh/ hour";
+            // 
             // TMEnergy
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 69);
-            BackgroundImage = Properties.Resources.Group_226;
+            BackgroundImage = Properties.Resources.Group_2261;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(music);
+            Controls.Add(stove);
+            Controls.Add(lighting);
+            Controls.Add(heating);
+            Controls.Add(automaticSaving);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox2);
             FormBorderStyle = FormBorderStyle.None;
@@ -367,6 +519,7 @@
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -387,5 +540,13 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private Button automaticSaving;
+        private ReaLTaiizor.Controls.HopeToggle heating;
+        private ReaLTaiizor.Controls.HopeToggle lighting;
+        private ReaLTaiizor.Controls.HopeToggle stove;
+        private ReaLTaiizor.Controls.HopeToggle music;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

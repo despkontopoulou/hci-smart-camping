@@ -56,5 +56,12 @@ namespace SmartTent
             canopyInnstallation.Show();
             this.Hide();
         }
+
+        private void SubTent4_Click(object sender, EventArgs e)
+        {
+            TMLightingSettings lightingSettings = new TMLightingSettings();
+            lightingSettings.Show();
+            this.Hide();
+        }
     }
 }

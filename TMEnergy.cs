@@ -23,7 +23,7 @@ namespace SmartTent
             MainExploreNearby.Location = new Point(0, 240);
             MainEmergencyNav.Location = new Point(0, 280);
         }
-
+        private Boolean toggleAutomatic = false;
 
         private void MainExploreNearby_Click(object sender, EventArgs e)
         {
@@ -120,14 +120,14 @@ namespace SmartTent
 
         private void SubTent4_Click(object sender, EventArgs e)
         {
-
+            TMLightingSettings lightingSettings = new TMLightingSettings();
+            lightingSettings.Show();
+            this.Hide();
         }
 
         private void SubTent5_Click(object sender, EventArgs e)
         {
-            TMLightingSettings lightingSettings = new TMLightingSettings();
-            lightingSettings.Show();
-            this.Hide();
+
         }
 
         private void SubTent3_Click(object sender, EventArgs e)
@@ -135,6 +135,52 @@ namespace SmartTent
             TMCanopyInstallation canopyInstallation = new TMCanopyInstallation(SharedData.SelectedCanopies);
             canopyInstallation.Show();
             this.Hide();
+
+        }
+
+        private void SubExplore1_Click(object sender, EventArgs e)
+        {
+            ENShelters shelters = new ENShelters();
+            shelters.Show();
+            this.Hide();
+        }
+        private void SubExplore2_Click(object sender, EventArgs e)
+        {
+            EXServices services = new EXServices();
+            services.Show();
+            this.Hide();
+        }
+        private void SubExplore3_Click(object sender, EventArgs e)
+        {
+            EXWeather weather = new EXWeather();
+            weather.Show();
+            this.Hide();
+
+        }
+        private void SubEmergNav1_Click(object sender, EventArgs e)
+        {
+            EXAttractions attractions = new EXAttractions();
+            attractions.Show();
+            this.Hide();
+
+        }
+
+        private void automaticSaving_Click(object sender, EventArgs e)
+        {
+            toggleAutomatic = !toggleAutomatic;
+
+            if (toggleAutomatic)
+            {
+                heating.Checked = false;
+                lighting.Checked = false;
+                stove.Checked = false;
+                automaticSaving.Text = "Enabled Automatic Energy Saving";
+                label3.Text = "1kWh/ hour";
+            }
+            else {
+                automaticSaving.Text = "Enable Automatic Energy Saving";
+                label3.Text = "5kWh/ hour";
+            }
 
         }
     }
