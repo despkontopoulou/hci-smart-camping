@@ -373,6 +373,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_3431 {
+            get {
+                object obj = ResourceManager.GetObject("Group 3431", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_354 {
             get {
                 object obj = ResourceManager.GetObject("Group 354", resourceCulture);
@@ -486,6 +496,36 @@ namespace SmartTent.Properties {
         internal static System.Drawing.Bitmap TMPegInstallation {
             get {
                 object obj = ResourceManager.GetObject("TMPegInstallation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window__archaeological {
+            get {
+                object obj = ResourceManager.GetObject("window- archaeological", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_riverbank {
+            get {
+                object obj = ResourceManager.GetObject("window-riverbank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_waterfall {
+            get {
+                object obj = ResourceManager.GetObject("window-waterfall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

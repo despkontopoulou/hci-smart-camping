@@ -45,10 +45,25 @@
             SubTent3 = new Button();
             SubTent2 = new Button();
             SubTent1 = new Button();
+            waterfall_window = new PictureBox();
+            archeo_window = new PictureBox();
+            riverbank_window = new PictureBox();
+            send_waterfall = new Button();
+            send_archeo = new Button();
+            send_riverbank = new Button();
+            archeo_btn = new PictureBox();
+            waterfall_btn = new PictureBox();
+            riverbank_btn = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)waterfall_window).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)archeo_window).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)riverbank_window).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)archeo_btn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)waterfall_btn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)riverbank_btn).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -106,6 +121,7 @@
             MainExploreNearby.Text = "Explore Nearby";
             MainExploreNearby.TextAlign = ContentAlignment.MiddleLeft;
             MainExploreNearby.UseVisualStyleBackColor = true;
+            MainExploreNearby.Click += MainExploreNearby_Click;
             // 
             // MainTentManagement
             // 
@@ -238,6 +254,7 @@
             SubExplore1.Text = "Local Attractions";
             SubExplore1.TextAlign = ContentAlignment.TopLeft;
             SubExplore1.UseVisualStyleBackColor = true;
+            SubExplore1.Click += SubExplore1_Click;
             // 
             // SubPanelTent
             // 
@@ -265,7 +282,7 @@
             SubTent5.Margin = new Padding(2);
             SubTent5.Name = "SubTent5";
             SubTent5.Padding = new Padding(14, 0, 0, 0);
-            SubTent5.Size = new Size(316, 40);
+            SubTent5.Size = new Size(300, 40);
             SubTent5.TabIndex = 5;
             SubTent5.Text = "Energy Consumption";
             SubTent5.TextAlign = ContentAlignment.TopLeft;
@@ -346,22 +363,152 @@
             SubTent1.UseVisualStyleBackColor = true;
             SubTent1.Click += SubTent1_Click;
             // 
+            // waterfall_window
+            // 
+            waterfall_window.BackColor = Color.Transparent;
+            waterfall_window.BackgroundImage = Properties.Resources.window_waterfall;
+            waterfall_window.BackgroundImageLayout = ImageLayout.None;
+            waterfall_window.Location = new Point(775, 169);
+            waterfall_window.Name = "waterfall_window";
+            waterfall_window.Size = new Size(348, 224);
+            waterfall_window.TabIndex = 11;
+            waterfall_window.TabStop = false;
+            waterfall_window.Visible = false;
+            // 
+            // archeo_window
+            // 
+            archeo_window.BackColor = Color.Transparent;
+            archeo_window.BackgroundImage = Properties.Resources.window__archaeological;
+            archeo_window.BackgroundImageLayout = ImageLayout.None;
+            archeo_window.Location = new Point(1186, 27);
+            archeo_window.Name = "archeo_window";
+            archeo_window.Size = new Size(348, 206);
+            archeo_window.TabIndex = 12;
+            archeo_window.TabStop = false;
+            archeo_window.Visible = false;
+            // 
+            // riverbank_window
+            // 
+            riverbank_window.BackColor = Color.Transparent;
+            riverbank_window.BackgroundImage = Properties.Resources.window_riverbank;
+            riverbank_window.BackgroundImageLayout = ImageLayout.None;
+            riverbank_window.Location = new Point(802, 771);
+            riverbank_window.Name = "riverbank_window";
+            riverbank_window.Size = new Size(348, 206);
+            riverbank_window.TabIndex = 13;
+            riverbank_window.TabStop = false;
+            riverbank_window.Visible = false;
+            // 
+            // send_waterfall
+            // 
+            send_waterfall.BackColor = Color.FromArgb(195, 241, 213);
+            send_waterfall.FlatAppearance.BorderSize = 0;
+            send_waterfall.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            send_waterfall.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            send_waterfall.FlatStyle = FlatStyle.Flat;
+            send_waterfall.ForeColor = Color.DarkGreen;
+            send_waterfall.Location = new Point(858, 332);
+            send_waterfall.Name = "send_waterfall";
+            send_waterfall.Size = new Size(175, 31);
+            send_waterfall.TabIndex = 17;
+            send_waterfall.Text = "Send route to mobile";
+            send_waterfall.UseVisualStyleBackColor = false;
+            send_waterfall.Visible = false;
+            // 
+            // send_archeo
+            // 
+            send_archeo.BackColor = Color.FromArgb(195, 241, 213);
+            send_archeo.FlatAppearance.BorderSize = 0;
+            send_archeo.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            send_archeo.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            send_archeo.FlatStyle = FlatStyle.Flat;
+            send_archeo.ForeColor = Color.DarkGreen;
+            send_archeo.Location = new Point(1271, 190);
+            send_archeo.Name = "send_archeo";
+            send_archeo.Size = new Size(175, 31);
+            send_archeo.TabIndex = 18;
+            send_archeo.Text = "Send route to mobile";
+            send_archeo.UseVisualStyleBackColor = false;
+            send_archeo.Visible = false;
+            // 
+            // send_riverbank
+            // 
+            send_riverbank.BackColor = Color.FromArgb(195, 241, 213);
+            send_riverbank.FlatAppearance.BorderSize = 0;
+            send_riverbank.FlatAppearance.MouseDownBackColor = Color.FromArgb(154, 209, 158);
+            send_riverbank.FlatAppearance.MouseOverBackColor = Color.FromArgb(191, 211, 188);
+            send_riverbank.FlatStyle = FlatStyle.Flat;
+            send_riverbank.ForeColor = Color.DarkGreen;
+            send_riverbank.Location = new Point(889, 933);
+            send_riverbank.Name = "send_riverbank";
+            send_riverbank.Size = new Size(175, 31);
+            send_riverbank.TabIndex = 19;
+            send_riverbank.Text = "Send route to mobile";
+            send_riverbank.UseVisualStyleBackColor = false;
+            send_riverbank.Visible = false;
+            // 
+            // archeo_btn
+            // 
+            archeo_btn.BackColor = Color.Transparent;
+            archeo_btn.Location = new Point(1129, 239);
+            archeo_btn.Name = "archeo_btn";
+            archeo_btn.Size = new Size(75, 79);
+            archeo_btn.TabIndex = 20;
+            archeo_btn.TabStop = false;
+            archeo_btn.Click += archaeo_btn_Click;
+            // 
+            // waterfall_btn
+            // 
+            waterfall_btn.BackColor = Color.Transparent;
+            waterfall_btn.Location = new Point(727, 143);
+            waterfall_btn.Name = "waterfall_btn";
+            waterfall_btn.Size = new Size(75, 79);
+            waterfall_btn.TabIndex = 21;
+            waterfall_btn.TabStop = false;
+            waterfall_btn.Click += waterfall_btn_Click;
+            // 
+            // riverbank_btn
+            // 
+            riverbank_btn.BackColor = Color.Transparent;
+            riverbank_btn.Location = new Point(754, 754);
+            riverbank_btn.Name = "riverbank_btn";
+            riverbank_btn.Size = new Size(75, 79);
+            riverbank_btn.TabIndex = 22;
+            riverbank_btn.TabStop = false;
+            riverbank_btn.Click += riverbank_btn_Click;
+            // 
             // EXAttractions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 71, 95);
-            BackgroundImage = Properties.Resources.Group_343;
+            BackgroundImage = Properties.Resources.Group_3431;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(send_riverbank);
+            Controls.Add(send_archeo);
+            Controls.Add(send_waterfall);
+            Controls.Add(archeo_btn);
+            Controls.Add(riverbank_window);
+            Controls.Add(archeo_window);
+            Controls.Add(waterfall_window);
             Controls.Add(MainPanel);
             Controls.Add(nightControlBox1);
+            Controls.Add(waterfall_btn);
+            Controls.Add(riverbank_btn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EXAttractions";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EXAttractions";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)waterfall_window).EndInit();
+            ((System.ComponentModel.ISupportInitialize)archeo_window).EndInit();
+            ((System.ComponentModel.ISupportInitialize)riverbank_window).EndInit();
+            ((System.ComponentModel.ISupportInitialize)archeo_btn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)waterfall_btn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)riverbank_btn).EndInit();
             ResumeLayout(false);
         }
 
@@ -384,5 +531,14 @@
         private Button SubTent3;
         private Button SubTent2;
         private Button SubTent1;
+        private PictureBox waterfall_window;
+        private PictureBox archeo_window;
+        private PictureBox riverbank_window;
+        private Button send_waterfall;
+        private Button send_archeo;
+        private Button send_riverbank;
+        private PictureBox archeo_btn;
+        private PictureBox waterfall_btn;
+        private PictureBox riverbank_btn;
     }
 }

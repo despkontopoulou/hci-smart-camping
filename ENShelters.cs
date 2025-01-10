@@ -63,5 +63,12 @@ namespace SmartTent
             lightingSettings.Show();
             this.Hide();
         }
+
+        private void SubExplore1_Click(object sender, EventArgs e)
+        {
+            EXAttractions attractions = new EXAttractions();
+            attractions.Show();
+            this.Hide();
+        }
     }
 }

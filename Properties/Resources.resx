@@ -139,6 +139,9 @@
   <data name="campsite3-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\campsite3-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="campsite1-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite1-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="explore_nearby_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\explore_nearby_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,9 +172,6 @@
   <data name="tent_management_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tent_management_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 343" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 3551" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 3551.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,23 +196,35 @@
   <data name="exit_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="window-riverbank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window-riverbank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="campsite1-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\campsite1-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="campsite1-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite1-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 2261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 2261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 2192" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 2192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="window- archaeological" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window- archaeological.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="campsite4-y1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\campsite4-y1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window-waterfall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window-waterfall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 209" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 2193" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 2193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,7 +256,7 @@
   <data name="Group 2091" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 2091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 2261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 2261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 3431" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 3431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

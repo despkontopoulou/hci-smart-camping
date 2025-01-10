@@ -140,9 +140,11 @@ namespace SmartTent
 
         private void SubExplore1_Click(object sender, EventArgs e)
         {
-            ENShelters shelters = new ENShelters();
-            shelters.Show();
+            EXAttractions attractions = new EXAttractions();
+            attractions.Show();
             this.Hide();
+
+
         }
         private void SubExplore2_Click(object sender, EventArgs e)
         {
@@ -159,10 +161,9 @@ namespace SmartTent
         }
         private void SubEmergNav1_Click(object sender, EventArgs e)
         {
-            EXAttractions attractions = new EXAttractions();
-            attractions.Show();
+            ENShelters shelters = new ENShelters();
+            shelters.Show();
             this.Hide();
-
         }
         private void checkAutomatic(object sender, EventArgs e) {
             if (hopeToggle1.CheckState == CheckState.Unchecked)

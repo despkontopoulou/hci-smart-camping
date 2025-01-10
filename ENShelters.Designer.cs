@@ -238,6 +238,7 @@
             SubExplore1.Text = "Local Attractions";
             SubExplore1.TextAlign = ContentAlignment.TopLeft;
             SubExplore1.UseVisualStyleBackColor = true;
+            SubExplore1.Click += SubExplore1_Click;
             // 
             // SubPanelTent
             // 
@@ -357,6 +358,7 @@
             Controls.Add(nightControlBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ENShelters";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ENShelters";
             MainPanel.ResumeLayout(false);
             SubPanelEmergency.ResumeLayout(false);
