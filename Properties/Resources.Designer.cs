@@ -573,6 +573,16 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap page_template1 {
+            get {
+                object obj = ResourceManager.GetObject("page_template1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tent_management_btn {
             get {
                 object obj = ResourceManager.GetObject("tent_management_btn", resourceCulture);

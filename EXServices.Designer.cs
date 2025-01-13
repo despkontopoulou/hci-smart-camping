@@ -578,7 +578,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 71, 95);
-            BackgroundImage = Properties.Resources.Group_3411;
+            BackgroundImage = Properties.Resources.Group_3412;
             ClientSize = new Size(1920, 1080);
             Controls.Add(button7);
             Controls.Add(button6);

@@ -89,7 +89,7 @@ namespace SmartTent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.ordered;
+            this.BackgroundImage = Properties.Resources.ordered1;
             panel1.Visible = false;
             plus.Visible = false;
             minus.Visible = false;
