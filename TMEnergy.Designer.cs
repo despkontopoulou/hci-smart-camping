@@ -53,10 +53,12 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox2
@@ -493,6 +495,16 @@
             label3.TabIndex = 20;
             label3.Text = "5kWh/ hour";
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(25, 877);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 21;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // TMEnergy
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -500,6 +512,7 @@
             BackColor = Color.FromArgb(46, 51, 69);
             BackgroundImage = Properties.Resources.Group_2261;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -518,6 +531,7 @@
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -548,5 +562,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private PictureBox onlineHelp;
     }
 }

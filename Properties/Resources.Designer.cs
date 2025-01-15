@@ -583,6 +583,206 @@ namespace SmartTent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0001 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0002 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0003 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0003", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0004 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0004", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0005 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0005", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0006 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0006", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0007 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0007", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0008 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0008", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0009 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0009", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0010 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0010", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0011 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0012 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0012", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0013 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0013", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0014 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0014", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0015 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0015", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0016 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0016", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0017 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0017", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0018 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0018", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0019 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0019", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartCamping_UserManual_page_0020 {
+            get {
+                object obj = ResourceManager.GetObject("SmartCamping-UserManual_page-0020", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tent_management_btn {
             get {
                 object obj = ResourceManager.GetObject("tent_management_btn", resourceCulture);

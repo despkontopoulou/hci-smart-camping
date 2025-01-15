@@ -54,6 +54,7 @@
             archeo_btn = new PictureBox();
             waterfall_btn = new PictureBox();
             riverbank_btn = new PictureBox();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -64,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)archeo_btn).BeginInit();
             ((System.ComponentModel.ISupportInitialize)waterfall_btn).BeginInit();
             ((System.ComponentModel.ISupportInitialize)riverbank_btn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -483,6 +485,16 @@
             riverbank_btn.TabStop = false;
             riverbank_btn.Click += riverbank_btn_Click;
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(12, 874);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 23;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // EXAttractions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -490,6 +502,7 @@
             BackColor = Color.FromArgb(65, 71, 95);
             BackgroundImage = Properties.Resources.Group_3431;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(send_riverbank);
             Controls.Add(send_archeo);
             Controls.Add(send_waterfall);
@@ -515,6 +528,7 @@
             ((System.ComponentModel.ISupportInitialize)archeo_btn).EndInit();
             ((System.ComponentModel.ISupportInitialize)waterfall_btn).EndInit();
             ((System.ComponentModel.ISupportInitialize)riverbank_btn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
         }
 
@@ -546,5 +560,6 @@
         private PictureBox archeo_btn;
         private PictureBox waterfall_btn;
         private PictureBox riverbank_btn;
+        private PictureBox onlineHelp;
     }
 }

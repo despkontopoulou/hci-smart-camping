@@ -58,6 +58,7 @@
             current = new TextBox();
             button1 = new Button();
             hopeNotify1 = new ReaLTaiizor.Controls.HopeNotify();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -539,14 +541,25 @@
             hopeNotify1.WarningBackColor = Color.FromArgb(25, 230, 162, 60);
             hopeNotify1.WarningTextColor = Color.FromArgb(230, 162, 60);
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(12, 871);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 14;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // TMLocationSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 69);
-            BackgroundImage = Properties.Resources.page_template;
+            BackgroundImage = Properties.Resources.page_template1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(hopeNotify1);
             Controls.Add(button1);
             Controls.Add(current);
@@ -576,6 +589,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -612,5 +626,6 @@
         private TextBox current;
         private Button button1;
         private ReaLTaiizor.Controls.HopeNotify hopeNotify1;
+        private PictureBox onlineHelp;
     }
 }

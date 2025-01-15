@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartTent.Helpers;
+using System.Diagnostics;
 
 namespace SmartTent
 {
@@ -356,7 +357,13 @@ namespace SmartTent
             }
         }
 
-       
+
+        private void onlineHelp_Click(object sender, EventArgs e)
+        {
+            OnlineHelp help = new OnlineHelp();
+            help.Show();
+
+        }
     }
 
 }

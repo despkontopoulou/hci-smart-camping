@@ -118,110 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="automatic lighting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\automatic lighting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite3-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite3-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite4-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite4-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 354" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 354.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 276" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 276.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="campsite2-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite2-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TMPegInstallation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TMPegInstallation1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="location_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\location_selection3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite3-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite3-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="explore_nearby_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\explore_nearby_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ordered1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ordered1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emergency_nav_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emergency_nav_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite3-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite3-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ordered" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ordered.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 341" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 341.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mainbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emergency_nav_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emergency_nav_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite4-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite4-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite2-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite2-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite1-n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite1-n1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite2-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite2-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tent_management_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tent_management_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 270" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 277" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 277.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 3551" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 3551.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 226" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 2093" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 2093.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tent_management_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tent_management_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 219" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 219.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite2-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite2-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 364" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 364.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 3431" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 3431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 3412" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 3412.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="window-riverbank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\window-riverbank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 209" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="campsite1-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\campsite1-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,64 +139,217 @@
   <data name="Group 2192" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 2192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="window- archaeological" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\window- archaeological.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="campsite1-n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite1-n1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 3411" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 3411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="campsite2-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite2-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 341" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 341.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ordered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ordered.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="campsite4-y1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\campsite4-y1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="window-waterfall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\window-waterfall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 2261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 2261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 2191" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 2191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 343" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 2193" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 2193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="menu_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 2092" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 2092.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 3552" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 3552.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campsite1-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campsite1-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 355" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 355.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="campsite4-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\campsite4-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="explore_nearby_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\explore_nearby_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="automatic lighting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\automatic lighting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_template1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_template1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 3552" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 3552.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tent_management_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tent_management_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 3551" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 3551.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 2093" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 2093.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 219.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite3-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite3-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 2193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 2193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite4-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite4-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ordered1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ordered1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite4-n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite4-n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 3431" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 3431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0003.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 276" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 276.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0007.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 355" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 355.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite3-y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite3-y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 2091" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 2091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0006.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="explore_nearby_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explore_nearby_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="location_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\location_selection3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite2-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite2-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window- archaeological" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window- archaeological.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 2261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 2261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 275" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_template1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_template1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tent_management_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tent_management_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite3-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite3-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 3411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 3411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campsite1-g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campsite1-g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 2092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 2092.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window-waterfall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window-waterfall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0004.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 2191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 2191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0005.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0002.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0008.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emergency_nav_btn_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emergency_nav_btn_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window-riverbank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window-riverbank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emergency_nav_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emergency_nav_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 354" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 354.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 364" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 364.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="explore_nearby_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explore_nearby_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0009.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0010.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0013.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0014.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0015.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0016.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0017.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0018.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0019.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartCamping-UserManual_page-0020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartCamping-UserManual_page-0020.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

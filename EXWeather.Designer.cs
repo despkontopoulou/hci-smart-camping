@@ -48,6 +48,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -55,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -388,6 +390,16 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += SubEmergNav1_Click;
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(34, 868);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 15;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // EXWeather
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -395,6 +407,7 @@
             BackColor = Color.FromArgb(65, 71, 95);
             BackgroundImage = Properties.Resources.Group_354;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -411,6 +424,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
         }
 
@@ -436,5 +450,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private PictureBox onlineHelp;
     }
 }

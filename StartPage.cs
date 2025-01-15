@@ -61,6 +61,6 @@ namespace SmartTent
             pictureBox.MouseHover += (sender, e) => pictureBox.Image = hover;
             pictureBox.MouseLeave += (sender, e) => pictureBox.Image = normal;
         }
-
+       
     }
 }

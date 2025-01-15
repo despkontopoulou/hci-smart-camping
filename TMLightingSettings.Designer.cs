@@ -57,6 +57,7 @@
             hopeToggle1 = new ReaLTaiizor.Controls.HopeToggle();
             customLightingPanel = new Panel();
             automaticLightingLabel = new Label();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -64,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             panel1.SuspendLayout();
             customLightingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -505,6 +507,16 @@
             automaticLightingLabel.TabIndex = 0;
             automaticLightingLabel.Text = "Automatic Lighting Enabled";
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(34, 878);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 15;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // TMLightingSettings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -513,6 +525,7 @@
             BackColor = Color.FromArgb(46, 51, 69);
             BackgroundImage = Properties.Resources.Group_2193;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(customLightingPanel);
             Controls.Add(hopeToggle1);
             Controls.Add(MainPanel);
@@ -536,6 +549,7 @@
             panel1.PerformLayout();
             customLightingPanel.ResumeLayout(false);
             customLightingPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -571,5 +585,6 @@
         private ReaLTaiizor.Controls.HopeToggle hopeToggle1;
         private Panel customLightingPanel;
         private Label automaticLightingLabel;
+        private PictureBox onlineHelp;
     }
 }

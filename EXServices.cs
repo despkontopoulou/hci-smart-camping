@@ -206,5 +206,11 @@ namespace SmartTent
             button6.Text = "Pending";
             button6.BackColor = Color.BurlyWood;
         }
+        private void onlineHelp_Click(object sender, EventArgs e)
+        {
+            OnlineHelp help = new OnlineHelp();
+            help.Show();
+
+        }
     }
 }

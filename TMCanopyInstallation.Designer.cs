@@ -49,10 +49,12 @@
             status1 = new Label();
             status2 = new Label();
             hopeToggle1 = new ReaLTaiizor.Controls.HopeToggle();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // MainPanel
@@ -422,6 +424,16 @@
             hopeToggle1.UseVisualStyleBackColor = false;
             hopeToggle1.CheckedChanged += hopeToggle1_CheckedChanged;
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(12, 870);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 15;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // TMCanopyInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -429,6 +441,7 @@
             BackColor = Color.FromArgb(46, 51, 69);
             BackgroundImage = Properties.Resources.Group_364;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(hopeToggle1);
             Controls.Add(status1);
             Controls.Add(nightControlBox1);
@@ -442,6 +455,7 @@
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -469,5 +483,6 @@
         private Label status1;
         private Label status2;
         private ReaLTaiizor.Controls.HopeToggle hopeToggle1;
+        private PictureBox onlineHelp;
     }
 }

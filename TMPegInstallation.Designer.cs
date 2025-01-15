@@ -57,10 +57,12 @@
             installationState = new TextBox();
             label1 = new Label();
             hopeNotify1 = new ReaLTaiizor.Controls.HopeNotify();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
             SubPanelTent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // MainPanel
@@ -554,6 +556,16 @@
             hopeNotify1.WarningBackColor = Color.FromArgb(25, 230, 162, 60);
             hopeNotify1.WarningTextColor = Color.FromArgb(230, 162, 60);
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(12, 875);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 24;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // TMPegInstallation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -562,6 +574,7 @@
             BackgroundImage = Properties.Resources.TMPegInstallation;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(hopeNotify1);
             Controls.Add(label1);
             Controls.Add(installationState);
@@ -585,6 +598,7 @@
             SubPanelEmergency.ResumeLayout(false);
             SubPanelExplore.ResumeLayout(false);
             SubPanelTent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -620,5 +634,6 @@
         private TextBox installationState;
         private Label label1;
         private ReaLTaiizor.Controls.HopeNotify hopeNotify1;
+        private PictureBox onlineHelp;
     }
 }

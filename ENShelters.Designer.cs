@@ -57,6 +57,7 @@
             shelbtn2 = new Button();
             shelbtn3 = new Button();
             shelbtn4 = new Button();
+            onlineHelp = new PictureBox();
             MainPanel.SuspendLayout();
             SubPanelEmergency.SuspendLayout();
             SubPanelExplore.SuspendLayout();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).BeginInit();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -528,6 +530,16 @@
             shelbtn4.UseVisualStyleBackColor = false;
             shelbtn4.Visible = false;
             // 
+            // onlineHelp
+            // 
+            onlineHelp.BackColor = Color.Transparent;
+            onlineHelp.Location = new Point(12, 877);
+            onlineHelp.Name = "onlineHelp";
+            onlineHelp.Size = new Size(178, 40);
+            onlineHelp.TabIndex = 15;
+            onlineHelp.TabStop = false;
+            onlineHelp.Click += onlineHelp_Click;
+            // 
             // ENShelters
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -535,6 +547,7 @@
             BackColor = Color.FromArgb(65, 71, 95);
             BackgroundImage = Properties.Resources.Group_3552;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(onlineHelp);
             Controls.Add(shelbtn4);
             Controls.Add(shelbtn3);
             Controls.Add(shelbtn2);
@@ -565,6 +578,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)onlineHelp).EndInit();
             ResumeLayout(false);
         }
 
@@ -599,5 +613,6 @@
         private Button shelbtn2;
         private Button shelbtn3;
         private Button shelbtn4;
+        private PictureBox onlineHelp;
     }
 }
